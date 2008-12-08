@@ -1,1 +1,7 @@
-vim-folder
+Usage: 
+
+On your home dir -
+$ git clone git://github.com/lsdr/vim-folder.git .vim
+
+To update:
+$ git pull
