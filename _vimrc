@@ -80,9 +80,6 @@ autocmd FileType python     set softtabstop=4
 autocmd FileType python     set shiftwidth=4
 autocmd FileType python     set expandtab
 
-" git specifics
-autocmd BufNewFile,BufRead COMMIT_EDITMSG set filetype=gitcommit
-
 " scroll viewpoint by 'n' lines
 " source: http://items.sjbach.com/319/configuring-vim-right
 nnoremap <C-e> 5<C-e>
@@ -93,11 +90,11 @@ nnoremap <C-y> 5<C-y>
 
 " FuzzyFinder
 let g:fuzzy_ignore = "*.log"
-let g:fuzzy_matching_limit = 70
+let g:fuzzy_matching_limit = 50
 let g:fuzzy_ceiling = 95000
 map <leader>t    :FuzzyFinderTextMate<CR>
 map <leader>b    :FuzzyFinderBuffer<CR>
-"map <leader>ff   :FuzzyFinderFile<CR>    " File
+map <leader>ff   :FuzzyFinderFile<CR>    " File
 "map <leader>fmf  :FuzzyFinderMruFile<CR> " Recent
 "map <leader>fc   :FuzzyFinderCmd<CR>     " CoMmand
 "map <leader>fmc  :FuzzyFinderMruCmd<CR>  " Command
