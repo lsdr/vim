@@ -89,7 +89,7 @@ nnoremap <C-y> 5<C-y>
 " ----------------------------------------------------------------------------
 
 " FuzzyFinder
-let g:fuzzy_ignore = "*.log"
+let g:fuzzy_ignore = '*.log,*.swp,*~,log,tmp,vendor,coverage,README'
 let g:fuzzy_matching_limit = 50
 let g:fuzzy_ceiling = 95000
 map <leader>t    :FuzzyFinderTextMate<CR>
@@ -107,7 +107,7 @@ map <leader>ff   :FuzzyFinderFile<CR>    " File
 map <leader>d :NERDTreeToggle <CR>
 let NERDTreeCaseSensitiveSort = 1
 let NERDTreeChDirMode = 2
-let NERDTreeIgnore = ['\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git', '\.pyc', '\.pyo']
+let NERDTreeIgnore = ['\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git', '\.pyc', '\.pyo', 'log', 'tmp', 'vendor', 'coverage']
 let NERDTreeMouseMode = 2
 let NERDTreeShowLineNumbers = 0
 let NERDTreeWinSize = 35
