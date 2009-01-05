@@ -1,0 +1,18 @@
+" lsdr .gvimrc
+" github.com/lsdr/.vim/tree
+
+" Font and color
+set guifont=Inconsolata:h12.85
+set antialias
+
+"color kib_darktango
+color railscasts
+
+" We don't need no stinkin' toolbar!
+set guioptions-=T
+
+" Window size
+set lines=50
+set columns=180
+
+set cursorline
