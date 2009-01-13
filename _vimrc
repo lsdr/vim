@@ -114,11 +114,11 @@ let NERDTreeWinSize = 35
 
 
 " plugin taglist
-let TList_Ctags_Cmd="/usr/local/bin/ctags"
-let TList_Display_Tag_Scope=0
-let TList_Display_Prototype=1
-"let Tlist_File_Fold_Auto_Close = 1
-"let Tlist_Show_Menu = 1
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+let Tlist_Display_Tag_Scope = 0
+"let Tlist_Display_Prototype = 1
+let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Show_Menu = 1
 map <Leader>tt :TlistToggle<CR>
 map <Leader>th :TlistHighlightTag<CR>
 map <Leader>tp :TlistShowPrototype<CR>
