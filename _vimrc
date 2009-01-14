@@ -82,8 +82,8 @@ autocmd FileType python     set expandtab
 
 " scroll viewpoint by 'n' lines
 " source: http://items.sjbach.com/319/configuring-vim-right
-nnoremap <C-e> 5<C-e>
-nnoremap <C-y> 5<C-y>
+nnoremap <C-e> 10<C-e>
+nnoremap <C-y> 10<C-y>
 
 " plugins
 " ----------------------------------------------------------------------------
@@ -104,14 +104,15 @@ map <leader>ff   :FuzzyFinderFile<CR>    " File
 "map <leader>ftf  :FuzzyFinderTaggedFile<CR>
 
 " NERDTree
-map <leader>d :NERDTreeToggle <CR>
+map <leader>d :NERDTreeToggle<CR>
+map <leader>dd :NERDTreeMirror<CR>
 let NERDTreeCaseSensitiveSort = 1
 let NERDTreeChDirMode = 2
-let NERDTreeIgnore = ['\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git', '\.pyc', '\.pyo', 'log', 'tmp', 'vendor', 'coverage']
+let NERDTreeIgnore = ['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','\log','\tmp', '\vendor', '\coverage']
 let NERDTreeMouseMode = 2
 let NERDTreeShowLineNumbers = 0
-let NERDTreeWinSize = 35
-
+let NERDTreeWinSize = 40
+let NERDTreeHijackNetrw = 1
 
 " plugin taglist
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
