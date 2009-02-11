@@ -50,11 +50,11 @@ set wildmode=list:longest
 set wildignore+=*.o,*~,.lo,*.swp
 
 " Search pattern highlight/incremental
-set hlsearch
-set incsearch
 set ignorecase
 set smartcase
 set showmatch
+set hlsearch
+set incsearch
 
 " Set <Leader> to comma
 let mapleader = ','
@@ -88,13 +88,16 @@ nnoremap <C-y> 10<C-y>
 " plugins
 " ----------------------------------------------------------------------------
 
+" autocomplpop
+let g:AutoComplPop_BehaviorKeywordLength = 4
+
 " FuzzyFinder
-let g:fuzzy_ignore = '*.log,*.swp,*~,log,tmp,vendor,coverage,README'
+let g:fuzzy_ignore = '*.log,*.swp,*~,log,tmp,coverage,README'
 let g:fuzzy_matching_limit = 50
-let g:fuzzy_ceiling = 95000
+let g:fuzzy_ceiling = 200000
 map <leader>t    :FuzzyFinderTextMate<CR>
 map <leader>b    :FuzzyFinderBuffer<CR>
-map <leader>ff   :FuzzyFinderFile<CR>    " File
+map <leader>ff   :FuzzyFinderFile<CR>
 "map <leader>fmf  :FuzzyFinderMruFile<CR> " Recent
 "map <leader>fc   :FuzzyFinderCmd<CR>     " CoMmand
 "map <leader>fmc  :FuzzyFinderMruCmd<CR>  " Command
@@ -108,10 +111,10 @@ map <leader>d :NERDTreeToggle<CR>
 map <leader>dd :NERDTreeMirror<CR>
 let NERDTreeCaseSensitiveSort = 1
 let NERDTreeChDirMode = 2
-let NERDTreeIgnore = ['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','\log','\tmp', '\vendor', '\coverage']
+let NERDTreeIgnore = ['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','\log','\tmp','\coverage']
 let NERDTreeMouseMode = 2
 let NERDTreeShowLineNumbers = 0
-let NERDTreeWinSize = 40
+let NERDTreeWinSize = 30
 let NERDTreeHijackNetrw = 1
 
 " plugin taglist
