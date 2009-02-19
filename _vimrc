@@ -130,3 +130,8 @@ map <Leader>tu :TlistUpdate<CR>
 "map <leader>ts :TlistSessionSave ~/.tlistsession.vim.tag <CR>
 "map <leader>tl :TlistSessionLoad ~/.tlistsession.vim.tag <CR>
 
+" rails.vim
+" small adjustment to handle html files better
+autocmd User Rails if &filetype != 'ruby' | setlocal sw=4 sts=4 noexpandtab | endif
+autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
+
