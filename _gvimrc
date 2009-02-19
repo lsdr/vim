@@ -5,8 +5,8 @@
 set guifont=Inconsolata:h12.85
 set antialias
 
-"color kib_darktango
-color railscasts
+" color railscasts
+color dark_matter
 
 " We don't need no stinkin' toolbar!
 set guioptions-=T
