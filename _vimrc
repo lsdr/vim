@@ -111,7 +111,7 @@ map <leader>d :NERDTreeToggle<CR>
 map <leader>dd :NERDTreeMirror<CR>
 let NERDTreeCaseSensitiveSort = 1
 let NERDTreeChDirMode = 2
-let NERDTreeIgnore = ['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','\log','\tmp','\coverage']
+let NERDTreeIgnore = ['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','log','tmp','coverage']
 let NERDTreeMouseMode = 2
 let NERDTreeShowLineNumbers = 0
 let NERDTreeWinSize = 30
