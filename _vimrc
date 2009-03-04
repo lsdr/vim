@@ -92,19 +92,14 @@ nnoremap <C-y> 10<C-y>
 let g:AutoComplPop_BehaviorKeywordLength = 4
 
 " FuzzyFinder
-let g:fuzzy_ignore = '*.log,*.swp,*~,log,tmp,coverage,README'
-let g:fuzzy_matching_limit = 50
+let g:fuzzy_ignore = '*.log;*.swp;*~;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
+let g:fuzzy_enumerating_limit = 30
 let g:fuzzy_ceiling = 200000
-map <leader>t    :FuzzyFinderTextMate<CR>
-map <leader>b    :FuzzyFinderBuffer<CR>
-map <leader>ff   :FuzzyFinderFile<CR>
-"map <leader>fmf  :FuzzyFinderMruFile<CR> " Recent
-"map <leader>fc   :FuzzyFinderCmd<CR>     " CoMmand
-"map <leader>fmc  :FuzzyFinderMruCmd<CR>  " Command
-"map <leader>fd   :FuzzyFinderDir<CR>
-"map <leader>fbm  :FuzzyFinderBookmark<CR>
-"map <leader>ft   :FuzzyFinderTag<CR>
-"map <leader>ftf  :FuzzyFinderTaggedFile<CR>
+map <leader>t   :FuzzyFinderTextMate<CR>
+map <leader>b   :FuzzyFinderBuffer<CR>
+map <leader>ff  :FuzzyFinderFile<CR>
+map <leader>rf  :FuzzyFinderMruFile<CR>
+map <leader>rc  :FuzzyFinderMruCmd<CR>
 
 " NERDTree
 map <leader>d :NERDTreeToggle<CR>
