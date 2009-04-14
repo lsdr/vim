@@ -92,7 +92,7 @@ nnoremap <C-y> 10<C-y>
 let g:AutoComplPop_BehaviorKeywordLength = 4
 
 " FuzzyFinder
-let g:fuzzy_ignore = '*.log;*.swp;*~;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
+let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
 let g:fuzzy_enumerating_limit = 30
 let g:fuzzy_ceiling = 200000
 map <leader>t   :FuzzyFinderTextMate<CR>
