@@ -7,7 +7,6 @@ filetype indent on
 
 set nocompatible
 set bs=2
-set backup
 set mousehide
 set nu
 set nuw=5
@@ -16,6 +15,12 @@ set hidden
 set ruler
 set so=5
 set history=750
+set fileformats=unix,mac,dos
+
+" Backup settings
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
 
 " Syntax highlight
 syntax on
@@ -36,7 +41,7 @@ set ch=2
 
 " Make the status line more informative
 set laststatus=2
-set statusline =%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
+set statusline=%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
 set statusline+=\ \ [
 set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
 set statusline+=]\ "
@@ -85,6 +90,12 @@ autocmd FileType python     set expandtab
 nnoremap <C-e> 10<C-e>
 nnoremap <C-y> 10<C-y>
 
+" make the arrow keys switch between splits
+map <up> <C-w>k
+map <down> <C-w>j
+map <right> <C-w>l
+map <left> <C-w>h
+
 " plugins
 " ----------------------------------------------------------------------------
 
@@ -93,8 +104,8 @@ let g:AutoComplPop_BehaviorKeywordLength = 4
 
 " FuzzyFinder
 let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
-let g:fuzzy_enumerating_limit = 30
-let g:fuzzy_ceiling = 200000
+let g:fuzzy_enumerating_limit = 15
+let g:fuzzy_ceiling = 300000
 map <leader>t   :FuzzyFinderTextMate<CR>
 map <leader>b   :FuzzyFinderBuffer<CR>
 map <leader>ff  :FuzzyFinderFile<CR>
