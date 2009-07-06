@@ -2,7 +2,11 @@
 " github.com/lsdr/.vim/tree
 
 " Font and color
-set guifont=Inconsolata:h12.85
+if has("gui_gtk2")
+  :set guifont=Inconsolata\ 10
+else
+  :set guifont=Inconsolata:h12.85
+end
 set antialias
 
 " color railscasts
