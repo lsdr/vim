@@ -79,6 +79,7 @@ map L $
 
 " Extended % matching
 " runtime macros/matchit.vim
+" using matchit as a plugin now, since is more up to date
 
 " Python specifics
 autocmd FileType python     set softtabstop=4
