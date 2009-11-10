@@ -78,7 +78,7 @@ map L $
 "set grepformat=%f:%l:%m
 
 " Extended % matching
-runtime macros/matchit.vim
+" runtime macros/matchit.vim
 
 " Python specifics
 autocmd FileType python     set softtabstop=4
