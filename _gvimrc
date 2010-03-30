@@ -5,7 +5,8 @@
 if has("gui_gtk2")
   :set guifont=Inconsolata\ 10
 else
-  :set guifont=Inconsolata:h12.85
+  " :set guifont=Inconsolata:h12.85
+  :set guifont=Monaco:h12
 end
 set antialias
 
@@ -16,7 +17,10 @@ color dark_matter
 set guioptions-=T
 
 " Window size
-set lines=50
-set columns=180
+" -- best when used with Inconsolata
+" set lines=50
+" set columns=180
+set lines=45
+set columns=145
 
 set cursorline
