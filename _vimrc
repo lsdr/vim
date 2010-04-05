@@ -1,5 +1,5 @@
 " lsdr .vimrc
-" github.com/lsdr/.vim/tree
+" github.com/lsdr/vim-folder
 
 filetype on
 filetype plugin on
@@ -76,10 +76,6 @@ map L $
 " Use ack instead of grep
 "set grepprg=ack
 "set grepformat=%f:%l:%m
-
-" Extended % matching
-" runtime macros/matchit.vim
-" using matchit as a plugin now, since is more up to date
 
 " Python specifics
 autocmd FileType python     set softtabstop=4

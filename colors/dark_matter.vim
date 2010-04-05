@@ -7,7 +7,7 @@
 " Version:      0.1
 "
 " Based on the Railscasts color scheme for vim.
-" I decided to change a few things, improve it for python coding and stuff.
+" Decided to change a few things, add python support and stuff...
 
 set background=dark
 hi clear
@@ -24,7 +24,8 @@ if has("gui_running")
 
   highlight Normal                    guifg=#E6E1DC   guibg=#2a2a2a
   highlight Cursor                    guifg=#000000   guibg=#65a3e9
-  highlight CursorLine                guibg=#000000
+  highlight CursorLine                guibg=#090909
+  highlight CursorColumn              guibg=#3f3f3f
  
   highlight Comment                   guifg=#BC9458   gui=italic
   highlight Constant                  guifg=#6D9CBE

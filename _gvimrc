@@ -1,5 +1,5 @@
 " lsdr .gvimrc
-" github.com/lsdr/.vim/tree
+" github.com/lsdr/vim-folder
 
 " Font and color
 if has("gui_gtk2")
@@ -10,7 +10,6 @@ else
 end
 set antialias
 
-" color railscasts
 color dark_matter
 
 " We don't need no stinkin' toolbar!
