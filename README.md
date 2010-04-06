@@ -1,4 +1,4 @@
-# Usage
+## Usage
 
 On Home dir:
     $ git clone git://github.com/lsdr/vim-folder.git .vim
@@ -9,7 +9,7 @@ To update:
     $ cd .vim
     $ git pull origin master
 
-# Plugin Versions
+## Plugin Versions
 
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [endwise](http://www.vim.org/scripts/script.php?script_id=2386), 1.0
