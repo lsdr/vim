@@ -103,11 +103,8 @@ let g:AutoComplPop_BehaviorKeywordLength = 4
 let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
 let g:fuzzy_enumerating_limit = 15
 let g:fuzzy_ceiling = 300000
-map <leader>t   :FuzzyFinderTextMate<CR>
-map <leader>b   :FuzzyFinderBuffer<CR>
-map <leader>ff  :FuzzyFinderFile<CR>
-map <leader>rf  :FuzzyFinderMruFile<CR>
-map <leader>rc  :FuzzyFinderMruCmd<CR>
+map <leader>b   :FufBuffer<CR>
+map <leader>ff  :FufFile<CR>
 
 " NERDTree
 map <leader>d :NERDTreeToggle<CR>
