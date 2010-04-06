@@ -69,18 +69,10 @@ command! Rehash source ~/.vimrc
 command! Color echo g:colors_name
 command! Helptags helptags ~/.vim/doc
 
-" home/end in a line
-map H ^
-map L $
-
-" Use ack instead of grep
-"set grepprg=ack
-"set grepformat=%f:%l:%m
-
 " Python specifics
-autocmd FileType python     set softtabstop=4
-autocmd FileType python     set shiftwidth=4
-autocmd FileType python     set expandtab
+autocmd FileType python set softtabstop=4
+autocmd FileType python set shiftwidth=4
+autocmd FileType python set expandtab
 
 " scroll viewpoint by 'n' lines
 " source: http://items.sjbach.com/319/configuring-vim-right
@@ -120,15 +112,12 @@ let NERDTreeHijackNetrw = 1
 " plugin taglist
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 let Tlist_Display_Tag_Scope = 0
-"let Tlist_Display_Prototype = 1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Show_Menu = 1
 map <Leader>tt :TlistToggle<CR>
 map <Leader>th :TlistHighlightTag<CR>
 map <Leader>tp :TlistShowPrototype<CR>
 map <Leader>tu :TlistUpdate<CR>
-"map <leader>ts :TlistSessionSave ~/.tlistsession.vim.tag <CR>
-"map <leader>tl :TlistSessionLoad ~/.tlistsession.vim.tag <CR>
 
 " rails.vim
 " small adjustment to handle html files better
