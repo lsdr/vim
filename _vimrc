@@ -76,8 +76,8 @@ autocmd FileType python set expandtab
 
 " scroll viewpoint by 'n' lines
 " source: http://items.sjbach.com/319/configuring-vim-right
-nnoremap <C-e> 10<C-e>
-nnoremap <C-y> 10<C-y>
+nnoremap <C-e> 15<C-e>
+nnoremap <C-y> 15<C-y>
 
 " make the arrow keys switch between splits
 map <up> <C-w>k
