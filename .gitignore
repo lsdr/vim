@@ -12,6 +12,6 @@
 *.[t]gz
 *.[t]bz2
 
-tmp/
-log/
-backup/
+tmp/*
+log/*
+backup/*
