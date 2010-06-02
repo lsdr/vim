@@ -11,6 +11,7 @@ To update:
 
 # Plugin Versions
 
+* [AutoClose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [bufexplorer](http://www.vim.org/scripts/script.php?script_id=42), 7.2.7
 * [endwise](http://www.vim.org/scripts/script.php?script_id=2386), 1.0
@@ -18,4 +19,5 @@ To update:
 * [NERD_Commenter](http://www.vim.org/scripts/script.php?script_id=1218), 2.2.2
 * [NERD_tree](http://www.vim.org/scripts/script.php?script_id=1658), 4.1.0
 * [rails.vim](http://www.vim.org/scripts/script.php?script_id=1567), 4.2
+* [surround.vim](http://www.vim.org/scripts/script.php?script_id=1697), 1.90
 * [taglist](http://www.vim.org/scripts/script.php?script_id=273), 4.5
