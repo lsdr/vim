@@ -10,7 +10,8 @@ else
 end
 set antialias
 
-color dark_matter
+"color dark_matter
+color twilight3
 
 " We don't need no stinkin' toolbar!
 set guioptions-=T
