@@ -91,6 +91,13 @@ map <left> <C-w>h
 " autocomplpop
 let g:AutoComplPop_BehaviorKeywordLength = 4
 
+" FuzzyFinder
+let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
+let g:fuzzy_enumerating_limit = 15
+let g:fuzzy_ceiling = 300000
+map <leader>bb :FufBuffer<CR>
+map <leader>ff :FufFile<CR>
+
 " NERDTree
 map <leader>d :NERDTreeToggle<CR>
 map <leader>dd :NERDTreeMirror<CR>
