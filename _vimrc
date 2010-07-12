@@ -1,5 +1,6 @@
 " lsdr .vimrc
 " github.com/lsdr/vim-folder
+" vim: set foldmarker={,} foldlevel=0
 
 filetype on
 filetype plugin on
@@ -16,6 +17,7 @@ set ruler
 set so=5
 set history=750
 set fileformats=unix,mac,dos
+set cursorline
 
 " Backup settings
 set backup
@@ -74,11 +76,6 @@ autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set expandtab
 
-" scroll viewpoint by 'n' lines
-" source: http://items.sjbach.com/319/configuring-vim-right
-nnoremap <C-e> 15<C-e>
-nnoremap <C-y> 15<C-y>
-
 " make the arrow keys switch between splits
 map <up> <C-w>k
 map <down> <C-w>j
@@ -94,6 +91,7 @@ let g:AutoComplPop_BehaviorKeywordLength = 4
 " FuzzyFinder
 let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
 let g:fuzzy_enumerating_limit = 15
+let g:fuzzy_matching_limit = 40
 let g:fuzzy_ceiling = 300000
 map <leader>bb :FufBuffer<CR>
 map <leader>ff :FufFile<CR>
@@ -109,7 +107,10 @@ let NERDTreeShowLineNumbers = 0
 let NERDTreeWinSize = 30
 let NERDTreeHijackNetrw = 1
 
-" plugin taglist
+" NERDCommenter
+let NERDSpaceDelims = 1
+
+" taglist
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 let Tlist_Display_Tag_Scope = 0
 let Tlist_File_Fold_Auto_Close = 1
