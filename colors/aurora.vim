@@ -1,6 +1,6 @@
 " Vim color scheme
 "
-" Name:         twilight3.vim
+" Name:         aurora.vim
 " Maintainer:   Luiz Rocha <lsdrocha@gmail.com>
 " Last Change:  14 Jun 2010 
 " License:      public domain
