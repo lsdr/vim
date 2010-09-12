@@ -16,7 +16,7 @@ endif
 
 let g:colors_name="twilight"
 
-hi Normal         guifg=#F8F8F8           guibg=#141414
+hi Normal         guifg=#F3F3F3           guibg=#141414
 hi Cursor         guifg=#F8F8F8           guibg=#A7A7A7
 hi CursorIM       guifg=#F8F8F8           guibg=#5F5A60
 hi CursorLine     guifg=#FFFFFF           guibg=#671856
