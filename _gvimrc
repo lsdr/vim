@@ -1,7 +1,7 @@
 " lsdr .gvimrc
 " github.com/lsdr/vim-folder
 
-" Font and color
+" font and color
 if has("gui_gtk2")
   :set guifont=Inconsolata\ 10
 else
@@ -11,10 +11,14 @@ set antialias
 
 color aurora
 
-" We don't need no stinkin' toolbar!
+" we don't need no stinkin' toolbar!
 set guioptions-=T
 
-" Window size
+" window size
 set lines=45
 set columns=145
+
+" saving on focus lost
+autocmd FocusLost * :wa
+autocmd TabLeave * :w
 

@@ -16,6 +16,9 @@ syntax on
 " set <leader> to comma
 let mapleader = ','
 
+" just to speed things up
+nnoremap ; :
+
 " text width limited to 80 cols
 set textwidth=80
 
@@ -30,7 +33,7 @@ set nuw=5
 set wrap
 set hidden " change buffer without saving
 set ruler
-set so=5
+set so=3
 set history=750
 set fileformats=unix,mac,dos
 set cursorline
@@ -68,7 +71,7 @@ command! Helptags helptags ~/.vim/doc
 " clear search highlights
 nmap <silent> ,/ :nohlsearch<CR>
 
-" make the arrow keys switch between splits
+"" make the arrow keys switch between splits
 map <up> <C-w>k
 map <down> <C-w>j
 map <right> <C-w>l
