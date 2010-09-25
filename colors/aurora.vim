@@ -1,12 +1,12 @@
 " Vim color scheme
 "
 " Name:         aurora.vim
-" Maintainer:   Luiz Rocha <lsdrocha@gmail.com>
-" Last Change:  14 Jun 2010 
+" Maintainer:   Luiz Rocha <lsdrocha at gmail.com>
+" Last Change:  25 Set 2010
 " License:      public domain
-" Version:      0.1
+" Version:      0.2
 "
-" Based on TextMate's Twilight color scheme 
+" Loosely based on TextMate's Twilight color scheme 
 
 set background=dark
 hi clear
@@ -14,13 +14,14 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name="twilight"
+let g:colors_name="aurora"
 
-hi Normal         guifg=#F3F3F3           guibg=#141414
+hi Normal         guifg=#F3F3F3           guibg=#111111
 hi Cursor         guifg=#F8F8F8           guibg=#A7A7A7
 hi CursorIM       guifg=#F8F8F8           guibg=#5F5A60
 hi CursorLine     guifg=#FFFFFF           guibg=#671856
-hi Directory      guifg=#8F9D6A           guibg=#141414
+hi CursorColumn   guifg=#FFFFFF           guibg=#272727
+hi Directory      guifg=#8F9D6A           guibg=#111111
 hi ErrorMsg       guifg=#CF6A4C           guibg=#420E09
 hi VertSplit      guifg=#AC885B           guibg=#FFFFFF
 hi Folded         guifg=#F9EE98           guibg=#494949
@@ -28,14 +29,14 @@ hi IncSearch      guifg=#000000           guibg=#CF6A4C
 hi LineNr         guifg=#7587A6           guibg=#000000
 hi ModeMsg        guifg=#CF7D34           guibg=#E9C062
 hi MoreMsg        guifg=#CF7D34           guibg=#E9C062
-hi NonText        guifg=#D2A8A1           guibg=#141414
+hi NonText        guifg=#D2A8A1           guibg=#111111
 hi Question       guifg=#7587A6           guibg=#0E2231
 hi Search         guifg=#420E09           guibg=#CF6A4C
 hi SpecialKey     guifg=#CF7D34           guibg=#141414
 hi StatusLine     guifg=#0E2231           guibg=#8693A5
 hi StatusLineNC   guifg=#7587A6           guibg=#F8F8F8
 hi Title          guifg=#8B98AB           guibg=#0E2231
-hi Visual         guifg=#0E2231           guibg=#AFC4DB
+hi Visual         guifg=#F8F8F8           guibg=#193451
 hi WarningMsg     guifg=#CF6A4C           guibg=#420E09
 hi WildMenu       guifg=#AFC4DB           guibg=#0E2231
 
