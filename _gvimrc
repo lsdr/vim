@@ -19,6 +19,6 @@ set lines=45
 set columns=145
 
 " saving on focus lost
-autocmd FocusLost * :wa
-autocmd TabLeave * :w
+" autocmd FocusLost * :wa
+" autocmd TabLeave * :w
 
