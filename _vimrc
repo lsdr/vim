@@ -26,14 +26,14 @@ set textwidth=80
 set ch=2
 
 set nocompatible
-set bs=2
+set bs=2 " same as :set backspace=indent,eol,start
 set mousehide
 set nu
 set nuw=5
 set wrap
 set hidden " change buffer without saving
 set ruler
-set so=3
+set scrolloff=2 " lines above/below cursor
 set history=750
 set fileformats=unix,mac,dos
 set cursorline
@@ -59,17 +59,16 @@ set showmatch
 set hlsearch
 set incsearch
 
+" clear search highlights
+nmap <silent> ,/ :nohlsearch<CR>
+
 " backup and swap settings
 set nobackup
 set directory=~/.vim/tmp
 
 " a few useful shortcuts
 command! Rehash source ~/.vimrc
-command! Color echo g:colors_name
 command! Helptags helptags ~/.vim/doc
-
-" clear search highlights
-nmap <silent> ,/ :nohlsearch<CR>
 
 "" make the arrow keys switch between splits
 map <up> <C-w>k
@@ -117,16 +116,6 @@ let NERDTreeHijackNetrw = 1
 
 "" NERDCommenter
 let NERDSpaceDelims = 1
-
-"" taglist
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-let Tlist_Display_Tag_Scope = 0
-let Tlist_File_Fold_Auto_Close = 1
-let Tlist_Show_Menu = 1
-map <Leader>tt :TlistToggle<CR>
-map <Leader>th :TlistHighlightTag<CR>
-map <Leader>tp :TlistShowPrototype<CR>
-map <Leader>tu :TlistUpdate<CR>
 
 "" rails.vim
 """ small adjustment to handle html files better
