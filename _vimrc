@@ -95,12 +95,13 @@ autocmd FileType python set expandtab
 let g:AutoComplPop_BehaviorKeywordLength = 4
 
 "" FuzzyFinder
+let g:fuf_modesDisable = ['coveragefile', 'mrucmd', 'bookmarkdir', 'givenfile', 'givendir', 'givencmd', 'quickfix', 'jumplist']
 let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
-let g:fuzzy_enumerating_limit = 15
-let g:fuzzy_matching_limit = 40
-let g:fuzzy_ceiling = 300000
-map <leader>bb :FufBuffer<CR>
-map <leader>ff :FufFile<CR>
+let g:fuf_fuzzyRefining = 1
+let g:fuf_enumeratingLimit = 15
+map <leader>bb  :FufBuffer<CR>
+map <leader>ff  :FufFile<CR>
+map <leader>bcl :FufChangeList<CR>
 
 "" NERDTree
 map <leader>d :NERDTreeToggle<CR>
