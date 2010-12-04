@@ -83,7 +83,6 @@ set statusline+=\ \ [
 set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
 set statusline+=]\ "
 set statusline+=%=
-set statusline+=%(tag:[%{Tlist_Get_Tagname_By_Line()}]%)
 set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
 
 " python specifics
