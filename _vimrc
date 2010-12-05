@@ -92,7 +92,8 @@ autocmd FileType python set expandtab
 
 " plugins
 "" autocomplpop
-let g:AutoComplPop_BehaviorKeywordLength = 4
+let g:acp_behaviorKeywordLength=4
+let g:acp_behaviorFileLength=4
 
 "" FuzzyFinder
 let g:fuf_modesDisable = ['coveragefile', 'mrucmd', 'bookmarkdir', 'givenfile', 'givendir', 'givencmd', 'quickfix', 'jumplist']
