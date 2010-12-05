@@ -25,6 +25,7 @@ set textwidth=80
 " make command line two lines high
 set ch=2
 
+" interface and basic behavior
 set nocompatible
 set bs=2 " same as :set backspace=indent,eol,start
 set mousehide
@@ -38,6 +39,7 @@ set history=750
 set fileformats=unix,mac,dos
 set cursorline
 set autoread " automatically reloads file if changed outside
+set splitbelow " split new window below current window
 
 " tab/indentation configuration
 set softtabstop=2
@@ -55,6 +57,7 @@ set wildignore+=*.o,*~,.lo,*.swp,*.pyc
 " search pattern highlight/incremental
 set ignorecase
 set smartcase
+set infercase
 set showmatch
 set hlsearch
 set incsearch
@@ -96,7 +99,7 @@ let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
 "" FuzzyFinder
-let g:fuf_modesDisable = ['coveragefile', 'mrucmd', 'bookmarkdir', 'givenfile', 'givendir', 'givencmd', 'quickfix', 'jumplist']
+let g:fuf_modesDisable = ['coveragefile', 'mrucmd', 'bookmarkdir', 'givenfile', 'givendir', 'givencmd', 'quickfix', 'jumplist', 'line']
 let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
 let g:fuf_fuzzyRefining = 1
 let g:fuf_enumeratingLimit = 15
