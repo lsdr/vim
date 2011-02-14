@@ -52,7 +52,7 @@ set smartindent
 " tab completion
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*.o,*~,.lo,*.swp,*.pyc
+set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git
 
 " search pattern highlight/incremental
 set ignorecase
@@ -125,4 +125,9 @@ let NERDSpaceDelims = 1
 """ small adjustment to handle html files better
 autocmd User Rails if &filetype != 'ruby' | setlocal sw=4 sts=4 noexpandtab | endif
 autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
+
+"" command-t
+let g:CommandTMaxFiles=5000
+let g:CommandTMaxDepth=10
+let g:CommandTMaxHeight=10
 
