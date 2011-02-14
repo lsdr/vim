@@ -11,6 +11,7 @@
 *.arj
 *.[t]gz
 *.[t]bz2
+*.VimballRecord
 
 tmp/*
 log/*
