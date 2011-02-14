@@ -20,7 +20,7 @@ To update:
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984), 4.2.2
   * [l9](http://www.vim.org/scripts/script.php?script_id=3252), 1.1
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
-* [NERD_Commenter](http://www.vim.org/scripts/script.php?script_id=1218), 2.2.2
+* [NERD_Commenter](http://www.vim.org/scripts/script.php?script_id=1218), 2.3.0
 * [NERD_tree](http://www.vim.org/scripts/script.php?script_id=1658), 4.1.0
 * [rails.vim](http://www.vim.org/scripts/script.php?script_id=1567), 4.3
 
