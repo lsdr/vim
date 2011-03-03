@@ -21,9 +21,9 @@ if has("gui_running")
   "" Interface elements
   hi Normal         guifg=#FFFFFF     guibg=#1A1A1A
   hi Cursor         guifg=#FFFFFF     guibg=#7585C3
-  hi CursorLine                       guibg=#2B324C
-  hi CursorColumn                     guibg=#2B2B2B
-  hi Visual         guifg=#F8F8F8     guibg=#671856
+  hi CursorLine                       guibg=#282828
+  hi CursorColumn                     guibg=#282828
+  hi Visual                           guibg=#2B324C
   hi LineNr         guifg=#7587A6     guibg=#141414
   hi StatusLine     guifg=#0E2231     guibg=#8693A5
   hi StatusLineNC   guifg=#030303     guibg=#5A5A5A

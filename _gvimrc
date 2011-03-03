@@ -9,7 +9,7 @@ else
 end
 set antialias
 
-color aurora
+color wan
 
 " we don't need no stinkin' toolbar!
 set guioptions-=T
