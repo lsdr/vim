@@ -42,6 +42,8 @@ if has("gui_running")
   hi Statement      guifg=#CDA869
   hi Identifier     guifg=#CDA869
   hi Conditional    guifg=#CDA869
+  hi PreProc        guifg=#8F9D63
+  hi Title          guifg=#FFFFFF
 
   """ Ruby Extra highlight
   hi rubyStringDelimiter        guifg=#8F9D63
