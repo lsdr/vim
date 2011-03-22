@@ -22,6 +22,9 @@ nnoremap ; :
 " text width limited to 80 cols
 set textwidth=80
 
+" encoding it UTF-8 no matter what the term says
+set encoding=utf-8
+
 " make command line two lines high
 set ch=2
 
@@ -34,12 +37,13 @@ set nuw=5
 set wrap
 set hidden " change buffer without saving
 set ruler
-set scrolloff=2 " lines above/below cursor
+set scrolloff=5 " lines above/below cursor
 set history=750
 set fileformats=unix,mac,dos
 set cursorline
 set autoread " automatically reloads file if changed outside
 set splitbelow " split new window below current window
+set nojoinspaces " use just one space to join strings
 
 " tab/indentation configuration
 set softtabstop=2
@@ -62,22 +66,9 @@ set showmatch
 set hlsearch
 set incsearch
 
-" clear search highlights
-nmap <silent> ,/ :nohlsearch<CR>
-
 " backup and swap settings
 set nobackup
 set directory=~/.vim/tmp
-
-" a few useful shortcuts
-command! Rehash source ~/.vimrc
-command! Helptags helptags ~/.vim/doc
-
-"" make the arrow keys switch between splits
-map <up> <C-w>k
-map <down> <C-w>j
-map <right> <C-w>l
-map <left> <C-w>h
 
 " make the status line more informative
 set laststatus=2
@@ -87,6 +78,26 @@ set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
 set statusline+=]\ "
 set statusline+=%=
 set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
+
+" a few useful shortcuts
+command! Rehash source ~/.vimrc
+command! Helptags helptags ~/.vim/doc
+
+" remappings and shortcuts
+"" clear search highlights
+nmap <silent> ,/ :nohlsearch<CR>
+
+"" make the arrow keys switch between splits
+map <up> <C-w>k
+map <down> <C-w>j
+map <right> <C-w>l
+map <left> <C-w>h
+
+"" identify the syntax highlighting group used at the cursor
+"" http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
+map <leader>hig :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 " python specifics
 autocmd FileType python set softtabstop=4
@@ -120,6 +131,7 @@ let NERDTreeHijackNetrw = 1
 
 "" NERDCommenter
 let NERDSpaceDelims = 1
+let NERDMenuMode = 0
 
 "" rails.vim
 """ small adjustment to handle html files better
