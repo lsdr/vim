@@ -24,3 +24,7 @@ To update:
 * [NERD_tree](http://www.vim.org/scripts/script.php?script_id=1658), 4.1.0
 * [rails.vim](http://www.vim.org/scripts/script.php?script_id=1567), 4.3
 
+# Color Schemes
+
+* [solarized.vim](https://github.com/altercation/solarized/raw/master/vim-colors-solarized/colors/solarized.vim), 2011-03-26
+
