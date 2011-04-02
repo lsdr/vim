@@ -14,7 +14,7 @@ To update:
 
 * [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
-* [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.0.1
+* [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.1b2
 * [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 0.98
 * [endwise](http://www.vim.org/scripts/script.php?script_id=2386), 1.0
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984), 4.2.2
