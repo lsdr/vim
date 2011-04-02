@@ -9,14 +9,15 @@ else
 end
 set antialias
 
+set background = dark
 color wan
 
 " we don't need no stinkin' toolbar!
-set guioptions-=T
+set guioptions -= T
 
 " window size
-set lines=45
-set columns=145
+set lines = 45
+set columns = 145
 
 " saving on focus lost
 " autocmd FocusLost * :wa
