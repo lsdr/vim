@@ -14,7 +14,7 @@ filetype indent on
 syntax on
 
 " set <leader> to comma
-let mapleader = ','
+let mapleader=','
 
 " just to speed things up
 nnoremap ; :
@@ -110,10 +110,10 @@ let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
 "" FuzzyFinder
-let g:fuf_modesDisable = ['coveragefile', 'mrucmd', 'bookmarkdir', 'givenfile', 'givendir', 'givencmd', 'quickfix', 'jumplist', 'line']
-let g:fuzzy_ignore = '*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
-let g:fuf_fuzzyRefining = 1
-let g:fuf_enumeratingLimit = 15
+let g:fuf_modesDisable=['coveragefile', 'mrucmd', 'bookmarkdir', 'givenfile', 'givendir', 'givencmd', 'quickfix', 'jumplist', 'line']
+let g:fuzzy_ignore='*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
+let g:fuf_fuzzyRefining=1
+let g:fuf_enumeratingLimit=15
 map <leader>bb  :FufBuffer<CR>
 map <leader>ff  :FufFile<CR>
 map <leader>bcl :FufChangeList<CR>
@@ -121,17 +121,17 @@ map <leader>bcl :FufChangeList<CR>
 "" NERDTree
 map <leader>d :NERDTreeToggle<CR>
 map <leader>dd :NERDTreeMirror<CR>
-let NERDTreeCaseSensitiveSort = 1
-let NERDTreeChDirMode = 2
-let NERDTreeIgnore = ['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','log','tmp','coverage']
-let NERDTreeMouseMode = 2
-let NERDTreeShowLineNumbers = 0
-let NERDTreeWinSize = 30
-let NERDTreeHijackNetrw = 1
+let NERDTreeCaseSensitiveSort=1
+let NERDTreeChDirMode=2
+let NERDTreeIgnore=['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','log','tmp','coverage']
+let NERDTreeMouseMode=2
+let NERDTreeShowLineNumbers=0
+let NERDTreeWinSize=30
+let NERDTreeHijackNetrw=1
 
 "" NERDCommenter
-let NERDSpaceDelims = 1
-let NERDMenuMode = 0
+let NERDSpaceDelims=1
+let NERDMenuMode=0
 
 "" rails.vim
 """ small adjustment to handle html files better
