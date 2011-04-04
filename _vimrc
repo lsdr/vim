@@ -56,7 +56,7 @@ set smartindent
 " tab completion
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git
+set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git,*.log
 
 " search pattern highlight/incremental
 set ignorecase
