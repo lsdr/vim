@@ -26,5 +26,5 @@ To update:
 
 # Color Schemes
 
-* [solarized.vim](https://github.com/altercation/solarized/raw/master/vim-colors-solarized/colors/solarized.vim), 2011-03-26
+* [solarized.vim](https://github.com/altercation/solarized/raw/master/vim-colors-solarized/colors/solarized.vim), 2011-05-09
 
