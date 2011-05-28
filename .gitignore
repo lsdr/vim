@@ -9,6 +9,7 @@
 *.zip
 *.rar
 *.arj
+*.vba
 *.[t]gz
 *.[t]bz2
 *.VimballRecord

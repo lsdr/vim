@@ -14,7 +14,7 @@ To update:
 
 * [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
-* [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.1b2
+* [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.2.1
 * [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 0.98
 * [endwise](http://www.vim.org/scripts/script.php?script_id=2386), 1.0
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984), 4.2.2
@@ -27,4 +27,11 @@ To update:
 # Color Schemes
 
 * [solarized.vim](https://github.com/altercation/solarized/raw/master/vim-colors-solarized/colors/solarized.vim), 2011-05-09
+
+# Notes
+
+If [rvm]() is present, do not forget to set the ruby system interpreter before
+updating `command-t`.
+
+    $ rvm use system
 
