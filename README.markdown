@@ -1,14 +1,20 @@
 # Usage
 
 On Home dir:
+
+```sh
     $ git clone git://github.com/lsdr/vim-folder.git .vim  
     $ ln -s .vim/_vimrc .vimrc  
     $ ln -s .vim/_gvimrc .gvimrc  
     $ mkdir -p .vim/tmp  
+```
 
 To update:
+
+```sh
     $ cd .vim
     $ git pull origin master
+```
 
 # Plugin Versions
 
