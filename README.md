@@ -29,8 +29,7 @@ To update:
 
 # Notes
 
-If [rvm]() is present, do not forget to set the ruby system interpreter before
-updating `command-t`.
-
-    $ rvm use system
+On Vim updates, check which ruby interpreter it compiled against (a simple `vim --version`
+should tell you) and be sure to recompile command-t using the same ruby version,
+or else gVim might crash.
 
