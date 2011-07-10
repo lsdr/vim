@@ -109,15 +109,6 @@ autocmd FileType python set expandtab
 let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
-"" FuzzyFinder
-let g:fuf_modesDisable=['coveragefile', 'mrucmd', 'bookmarkdir', 'givenfile', 'givendir', 'givencmd', 'quickfix', 'jumplist', 'line']
-let g:fuzzy_ignore='*.log;*.swp;*~;temp/*;log/*;tmp/*;coverage/*;README;*.jpg;*.png;*.gem'
-let g:fuf_fuzzyRefining=1
-let g:fuf_enumeratingLimit=15
-map <leader>bb  :FufBuffer<CR>
-map <leader>ff  :FufFile<CR>
-map <leader>bcl :FufChangeList<CR>
-
 "" NERDTree
 map <leader>d :NERDTreeToggle<CR>
 map <leader>dd :NERDTreeMirror<CR>
