@@ -32,10 +32,19 @@ augroup endwise " {{{1
                 \ let b:endwise_addition = 'end&' |
                 \ let b:endwise_words = 'fu\%[nction],wh\%[ile],if,for,try' |
                 \ let b:endwise_syngroups = 'vimFuncKey,vimNotFunc,vimCommand'
+    autocmd FileType sh
+                \ let b:endwise_addition = '\=submatch(0)=="if" ? "fi" : submatch(0)=="case" ? "esac" : "done"' |
+                \ let b:endwise_words = 'if,case,do' |
+                \ let b:endwise_pattern = '\%(^\s*\zs\%(if\|case\)\>\ze\|\zs\<do\ze$\|^\s*\zsdo\s*\ze$\)' |
+                \ let b:endwise_syngroups = 'shConditional,shLoop,shIf,shFor,shRepeat,shCaseEsac'
+    autocmd FileType lua
+                \ let b:endwise_addition = '\=submatch(0)=="{" ? "}" : "end"' |
+                \ let b:endwise_words = 'function,do,then' |
+                \ let b:endwise_pattern = '^\s*\zs\%(function\|do\|then\)\>\%(.*[^.:@$]\<end\>\)\@!\|\<then\|do\ze\%(\s*|.*|\)\=\s*$' |
+                \ let b:endwise_syngroups = 'luaFunction,luaStatement,luaCond'
 augroup END " }}}1
 
 " Maps {{{1
-
 
 if maparg("<Plug>DiscretionaryEnd") == ""
     inoremap <silent> <SID>DiscretionaryEnd <C-R>=<SID>crend(0)<CR>
@@ -48,6 +57,9 @@ if maparg('<CR>','i') =~# '<C-R>=.*crend(.)<CR>\|<\%(Plug\|SID\)>.*End'
 elseif maparg('<CR>','i') =~ '<CR>'
     exe "imap <script> <C-X><CR> ".maparg('<CR>','i')."<SID>AlwaysEnd"
     exe "imap <script> <CR>      ".maparg('<CR>','i')."<SID>DiscretionaryEnd"
+elseif maparg('<CR>','i') =~ '<Plug>delimitMateCR'
+    exe "imap <C-X><CR> ".maparg('<CR>', 'i')."<Plug>AlwaysEnd"
+    exe "imap <CR> ".maparg('<CR>', 'i')."<Plug>DiscretionaryEnd"
 else
     imap <C-X><CR> <CR><Plug>AlwaysEnd
     imap <CR>      <CR><Plug>DiscretionaryEnd
