@@ -22,11 +22,11 @@ To update:
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.2.1
 * [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 0.98
-* [endwise](http://github.com/tpope/vim-endwise), 2011-05-11
+* [endwise][endwise-vimorg], 2011-05-11  _from [github][endwise-github]_
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
-* [NERD_Commenter][nerdcommenter], 2011-05-05
-* [NERD_tree][nerdtree], 2011-07-09
-* [rails.vim](http://github.com/tpope/vim-rails), 2011-06-23
+* [NERD_Commenter][nerdcommenter-vimorg], 2011-05-05  _from [github][nerdcommenter-github]_
+* [NERD_Tree][nerdtree-vimorg], 2011-07-09  _from [github][nerdtree-github]_
+* [rails.vim][rails-vimorg], 2011-06-23  _from [github][rails-github]_ 
 
 # Color Schemes
 
@@ -39,7 +39,13 @@ On Vim updates, check which ruby interpreter it compiled against (a simple `vim 
 should tell you) and be sure to recompile command-t using the same ruby version,
 or else gVim might crash.
 
-[nerdtree]: http://github.com/scrooloose/nerdtree
+
+[nerdtree-github]: http://github.com/scrooloose/nerdtree
 [nerdtree-vimorg]: http://www.vim.org/scripts/script.php?script_id=1658 
-[nerdcommenter]: http://github.com/scrooloose/nerdcommenter
+[nerdcommenter-github]: http://github.com/scrooloose/nerdcommenter
 [nerdcommenter-vimorg]: http://www.vim.org/scripts/script.php?script_id=1218
+[rails-github]: https://github.com/tpope/vim-rails
+[rails-vimorg]: http://www.vim.org/scripts/script.php?script_id=1567
+[endwise-github]: https://github.com/tpope/vim-endwise
+[endwise-vimorg]: http://www.vim.org/scripts/script.php?script_id=2386 
+
