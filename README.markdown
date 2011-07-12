@@ -26,7 +26,7 @@ To update:
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
 * [NERD_Commenter](http://www.vim.org/scripts/script.php?script_id=1218), 2.3.0
 * [NERD_tree](http://www.vim.org/scripts/script.php?script_id=1658), 4.1.0
-* [rails.vim](http://www.vim.org/scripts/script.php?script_id=1567), 4.3
+* [rails.vim](http://github.com/tpope/vim-rails), 2011-06-23
 
 # Color Schemes
 
