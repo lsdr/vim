@@ -119,6 +119,7 @@ let NERDTreeMouseMode=2
 let NERDTreeShowLineNumbers=0
 let NERDTreeWinSize=30
 let NERDTreeHijackNetrw=1
+let NERDTreeMinimalUI=1
 
 "" NERDCommenter
 let NERDSpaceDelims=1

@@ -24,8 +24,8 @@ To update:
 * [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 0.98
 * [endwise](http://github.com/tpope/vim-endwise), 2011-05-11
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
-* [NERD_tree](http://www.vim.org/scripts/script.php?script_id=1658), 4.1.0
 * [NERD_Commenter][nerdcommenter], 2011-05-05
+* [NERD_tree][nerdtree], 2011-07-09
 * [rails.vim](http://github.com/tpope/vim-rails), 2011-06-23
 
 # Color Schemes
@@ -39,5 +39,7 @@ On Vim updates, check which ruby interpreter it compiled against (a simple `vim 
 should tell you) and be sure to recompile command-t using the same ruby version,
 or else gVim might crash.
 
+[nerdtree]: http://github.com/scrooloose/nerdtree
+[nerdtree-vimorg]: http://www.vim.org/scripts/script.php?script_id=1658 
 [nerdcommenter]: http://github.com/scrooloose/nerdcommenter
 [nerdcommenter-vimorg]: http://www.vim.org/scripts/script.php?script_id=1218
