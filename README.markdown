@@ -22,11 +22,11 @@ To update:
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.2.1
 * [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 0.98
-* [endwise][endwise-vimorg], 2011-05-11  _from [github][endwise-github]_
+* [endwise][endwise-vimorg], 2011-08-30  _from [github][endwise-github]_
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
-* [NERD_Commenter][nerdcommenter-vimorg], 2011-05-05  _from [github][nerdcommenter-github]_
-* [NERD_Tree][nerdtree-vimorg], 2011-07-09  _from [github][nerdtree-github]_
-* [rails.vim][rails-vimorg], 2011-06-23  _from [github][rails-github]_ 
+* [NERD_Commenter][nerdcommenter-vimorg], 2011-07-21  _from [github][nerdcommenter-github]_
+* [NERD_Tree][nerdtree-vimorg], 2011-08-30  _from [github][nerdtree-github]_
+* [rails.vim][rails-vimorg], 2011-08-30  _from [github][rails-github]_ 
 
 # Color Schemes
 
