@@ -30,7 +30,6 @@ To update:
 
 # Color Schemes
 
-* [solarized.vim](https://github.com/altercation/solarized/raw/master/vim-colors-solarized/colors/solarized.vim), 2011-05-09
 * [pigraph.vim](https://raw.github.com/fmeyer/vim-pigraph/master/colors/pigraph.vim), 2011-04-06
 
 # Notes
