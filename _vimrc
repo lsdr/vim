@@ -135,3 +135,6 @@ let g:CommandTMaxFiles=5000
 let g:CommandTMaxDepth=10
 let g:CommandTMaxHeight=10
 
+"" nginx.vim
+au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
+
