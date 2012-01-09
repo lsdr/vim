@@ -24,7 +24,7 @@ To update:
 * [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 1.0
 * [endwise][endwise-vimorg], 2011-08-30  _from [github][endwise-github]_
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
-* [NERD_Commenter][nerdcommenter-vimorg], 2011-07-21  _from [github][nerdcommenter-github]_
+* [NERD_Commenter][nerdcommenter-vimorg], 2012-01-02  _from [github][nerdcommenter-github]_
 * [NERD_Tree][nerdtree-vimorg], 2011-08-30  _from [github][nerdtree-github]_
 * [rails.vim][rails-vimorg], 2011-08-30  _from [github][rails-github]_ 
 
