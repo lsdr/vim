@@ -21,7 +21,7 @@ To update:
 * [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.2.1
-* [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 0.98
+* [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 1.0
 * [endwise][endwise-vimorg], 2011-08-30  _from [github][endwise-github]_
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
 * [NERD_Commenter][nerdcommenter-vimorg], 2011-07-21  _from [github][nerdcommenter-github]_
