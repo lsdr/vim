@@ -27,6 +27,7 @@ To update:
 * [NERD_Tree][nerdtree-vimorg], 2012-01-07  _from [github][nerdtree-github]_
 * [rails.vim][rails-vimorg], 2011-11-25  _from [github][rails-github]_ 
 * [vim-ruby][vim-ruby-github], 2012-02-09 _from [github][vim-ruby-github]_
+* [vimerl][vimerl-vimorg], 2012-02-08 _from [github][vimerl-github]_
 
 # Syntax
 * [python 3.0](http://www.vim.org/scripts/script.php?script_id=790), 3.0.7
@@ -50,4 +51,6 @@ or else gVim might crash.
 [endwise-github]: https://github.com/tpope/vim-endwise
 [endwise-vimorg]: http://www.vim.org/scripts/script.php?script_id=2386 
 [vim-ruby-github]: https://github.com/vim-ruby/vim-ruby
+[vimerl-vimorg]: http://www.vim.org/scripts/script.php?script_id=3743
+[vimerl-github]: https://github.com/jimenezrick/vimerl
 
