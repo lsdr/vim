@@ -17,7 +17,6 @@ To update:
 ```
 
 # Plugin Versions
-
 * [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.3.1
@@ -28,8 +27,10 @@ To update:
 * [NERD_Tree][nerdtree-vimorg], 2012-01-07  _from [github][nerdtree-github]_
 * [rails.vim][rails-vimorg], 2011-11-25  _from [github][rails-github]_ 
 
-# Color Schemes
+# Syntax
+* [python 3.0](http://www.vim.org/scripts/script.php?script_id=790), 3.0.7
 
+# Color Schemes
 * [pigraph.vim](https://raw.github.com/fmeyer/vim-pigraph/master/colors/pigraph.vim), 2011-04-06
 
 # Notes
