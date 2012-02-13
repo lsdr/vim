@@ -26,6 +26,7 @@ To update:
 * [NERD_Commenter][nerdcommenter-vimorg], 2012-01-02  _from [github][nerdcommenter-github]_
 * [NERD_Tree][nerdtree-vimorg], 2012-01-07  _from [github][nerdtree-github]_
 * [rails.vim][rails-vimorg], 2011-11-25  _from [github][rails-github]_ 
+* [vim-ruby][vim-ruby-github], 2012-02-09 _from [github][vim-ruby-github]_
 
 # Syntax
 * [python 3.0](http://www.vim.org/scripts/script.php?script_id=790), 3.0.7
@@ -48,4 +49,5 @@ or else gVim might crash.
 [rails-vimorg]: http://www.vim.org/scripts/script.php?script_id=1567
 [endwise-github]: https://github.com/tpope/vim-endwise
 [endwise-vimorg]: http://www.vim.org/scripts/script.php?script_id=2386 
+[vim-ruby-github]: https://github.com/vim-ruby/vim-ruby
 
