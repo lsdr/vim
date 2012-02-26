@@ -12,11 +12,11 @@ ECHO = $(ECHO1:0=@echo)
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1
-hdrdir = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1
-arch_hdrdir = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p0/include/ruby-1.9.1/$(arch)
+topdir = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p125/include/ruby-1.9.1
+hdrdir = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p125/include/ruby-1.9.1
+arch_hdrdir = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p125/include/ruby-1.9.1/$(arch)
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/lsdr/.rvm/rubies/ruby-1.9.3-p0
+prefix = $(DESTDIR)/Users/lsdr/.rvm/rubies/ruby-1.9.3-p125
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
 exec_prefix = $(prefix)
 vendorhdrdir = $(rubyhdrdir)/vendor_ruby
@@ -53,7 +53,7 @@ vendorarchdir = $(vendorlibdir)/$(sitearch)
 
 NULLCMD = :
 
-CC = gcc-4.2
+CC = /usr/bin/gcc-4.2
 CXX = g++
 LIBRUBY = $(LIBRUBY_SO)
 LIBRUBY_A = lib$(RUBY_SO_NAME)-static.a
@@ -67,15 +67,15 @@ cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3
 debugflags = -ggdb
 warnflags = -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration
-CFLAGS   = -fno-common -arch x86_64 -O2 -fno-common -pipe 
+CFLAGS   = -fno-common -arch x86_64 -O2 -fno-common -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_RUBY_H -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
+CPPFLAGS = -DHAVE_RUBY_H -I/Users/lsdr/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
 CXXFLAGS = $(CFLAGS) $(cxxflags)
-ldflags  = -L. -Wl,-syslibroot /Developer/SDKs/MacOSX10.6.sdk -arch x86_64 -L/usr/local/lib
+ldflags  = -L. -L/usr/local/lib
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace
 ARCH_FLAG = 
-DLDFLAGS = $(ldflags) $(dldflags)
+DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
 LDSHAREDXX = $(CXX) -dynamic -bundle
 AR = ar
@@ -87,7 +87,7 @@ RUBY_SO_NAME = ruby.1.9.1
 arch = x86_64-darwin10.8.0
 sitearch = $(arch)
 ruby_version = 1.9.1
-ruby = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p0/bin/ruby
+ruby = /Users/lsdr/.rvm/rubies/ruby-1.9.3-p125/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 RM_RF = $(RUBY) -run -e rm -- -rf
@@ -102,8 +102,8 @@ COPY = cp
 
 preload = 
 
-libpath = . $(libdir)
-LIBPATH =  -L. -L$(libdir)
+libpath = . $(libdir) /Users/lsdr/.rvm/usr/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/lsdr/.rvm/usr/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
