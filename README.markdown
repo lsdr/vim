@@ -25,7 +25,7 @@ To update:
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
 * [NERD_Commenter][nerdcommenter-vimorg], 2012-03-22  _from [github][nerdcommenter-github]_
 * [NERD_Tree][nerdtree-vimorg], 2012-01-07  _from [github][nerdtree-github]_
-* [rails.vim][rails-vimorg], 2011-11-25  _from [github][rails-github]_ 
+* [rails.vim][rails-vimorg], 2012-04-19  _from [github][rails-github]_ 
 * [vim-ruby][vim-ruby-github], 2012-02-09 _from [github][vim-ruby-github]_
 * [vimerl][vimerl-vimorg], 2012-02-08 _from [github][vimerl-github]_
 
