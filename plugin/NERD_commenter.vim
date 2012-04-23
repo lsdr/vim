@@ -79,6 +79,7 @@ let s:delimiterMap = {
     \ 'apachestyle': { 'left': '#' },
     \ 'asciidoc': { 'left': '//' },
     \ 'applescript': { 'left': '--', 'leftAlt': '(*', 'rightAlt': '*)' },
+    \ 'armasm': { 'left': ';' },
     \ 'asm68k': { 'left': ';' },
     \ 'asm': { 'left': ';', 'leftAlt': '#' },
     \ 'asn': { 'left': '--' },
@@ -97,6 +98,7 @@ let s:delimiterMap = {
     \ 'bindzone': { 'left': ';' },
     \ 'bst': { 'left': '%' },
     \ 'btm': { 'left': '::' },
+    \ 'cabal': { 'left': '--' },
     \ 'caos': { 'left': '*' },
     \ 'calibre': { 'left': '//' },
     \ 'catalog': { 'left': '--', 'right': '--' },
@@ -153,6 +155,7 @@ let s:delimiterMap = {
     \ 'focexec': { 'left': '-*' },
     \ 'form': { 'left': '*' },
     \ 'foxpro': { 'left': '*' },
+    \ 'fsharp': { 'left': '(*', 'right': '*)', 'leftAlt': '//' },
     \ 'fstab': { 'left': '#' },
     \ 'fvwm': { 'left': '#' },
     \ 'fx': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
@@ -1127,6 +1130,13 @@ function! NERDComment(mode, type) range
     endif
 
     let &ignorecase = oldIgnoreCase
+
+    if isVisual
+        let nlines = lastLine - firstLine
+        silent! call repeat#set("V" . nlines . "jo" . "\<Plug>NERDCommenter". a:type)
+    else
+        silent! call repeat#set("\<Plug>NERDCommenter". a:type)
+    endif
 endfunction
 
 " Function: s:PlaceDelimitersAndInsBetween() function {{{2
@@ -2709,7 +2719,7 @@ function! s:CreateMaps(modes, target, desc, combo)
                 \ g:NERDMenuMode, '')
     let menu_command = 'menu <silent> ' . menuRoot . '.' . escape(a:desc, ' ')
     if strlen(a:combo)
-        let leader = exists('mapleader') ? mapleader : '\'
+        let leader = exists('g:mapleader') ? g:mapleader : '\'
         let menu_command .= '<Tab>' . escape(leader, '\') . a:combo
     endif
     let menu_command .= ' ' . (strlen(a:combo) ? plug : a:target)

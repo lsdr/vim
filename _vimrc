@@ -109,18 +109,6 @@ autocmd FileType python set expandtab
 let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
-"" NERDTree
-map <leader>d :NERDTreeToggle<CR>
-map <leader>dd :NERDTreeMirror<CR>
-let NERDTreeCaseSensitiveSort=1
-let NERDTreeChDirMode=2
-let NERDTreeIgnore=['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','log','tmp','coverage']
-let NERDTreeMouseMode=2
-let NERDTreeShowLineNumbers=0
-let NERDTreeWinSize=30
-let NERDTreeHijackNetrw=1
-let NERDTreeMinimalUI=1
-
 "" NERDCommenter
 let NERDSpaceDelims=1
 let NERDMenuMode=0
