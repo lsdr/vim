@@ -26,8 +26,8 @@ To update:
 * [NERD_Commenter][nerdcommenter-vimorg], 2012-03-22  _from [github][nerdcommenter-github]_
 * [NERD_Tree][nerdtree-vimorg], 2012-01-07  _from [github][nerdtree-github]_
 * [rails.vim][rails-vimorg], 2012-04-19  _from [github][rails-github]_ 
-* [vim-ruby][vim-ruby-github], 2012-02-09 _from [github][vim-ruby-github]_
-* [vimerl][vimerl-vimorg], 2012-02-08 _from [github][vimerl-github]_
+* [vim-ruby][vim-ruby-github], 2012-04-20 _from [github][vim-ruby-github]_
+* [vimerl][vimerl-vimorg], 2012-03-27 _from [github][vimerl-github]_
 
 # Syntax
 * [python 3.0](http://www.vim.org/scripts/script.php?script_id=790), 3.0.7
