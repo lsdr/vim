@@ -26,6 +26,7 @@ To update:
 * [NERD_Commenter][nerdcommenter-vimorg], 2012-03-22  _from [github][nerdcommenter-github]_
 * [rails.vim][rails-vimorg], 2012-04-19  _from [github][rails-github]_ 
 * [vim-ruby][vim-ruby-github], 2012-04-20 _from [github][vim-ruby-github]_
+* [vim-rvm][rvm-github], 2012-05-31 _from [github][rvm-github]_
 * [vimerl][vimerl-vimorg], 2012-03-27 _from [github][vimerl-github]_
 * [virtualenv][virtualenv-vimorg], 2012-05-29 _from [github][virtualenv-github]_
 
@@ -55,4 +56,4 @@ or else gVim might crash.
 [vimerl-github]: https://github.com/jimenezrick/vimerl
 [virtualenv-vimorg]: http://www.vim.org/scripts/script.php?script_id=3486
 [virtualenv-github]: https://github.com/jmcantrell/vim-virtualenv
-
+[rvm-github]: https://github.com/tpope/vim-rvm

@@ -76,6 +76,8 @@ set statusline=%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
 set statusline+=\ \ [
 set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
 set statusline+=]\ "
+set statusline+=%{VirtualEnvCondStatusline()}
+set statusline+=%{rvm#statusline_ft_ruby()}
 set statusline+=%=
 set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
 
@@ -125,4 +127,9 @@ let g:CommandTMaxHeight=10
 
 "" nginx.vim
 au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
+
+"" virtualenv.vim
+let g:virtualenv_directory='/Users/lsdr/.pvm'
+let g:virtualenv_auto_activate=1
+let g:virtualenv_stl_format='(py:%n)'
 
