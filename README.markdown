@@ -1,5 +1,4 @@
 # Usage
-
 On Home dir:
 
 ```sh
@@ -16,10 +15,13 @@ To update:
     $ git pull origin master
 ```
 
+# Building vim
+See [BUILD](https://github.com/lsdr/vim-folder/blob/master/BUILD.markdown) for
+further instructions.
+
 # Plugin Versions
 * [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
-* [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.3.1
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.4
 * [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 1.0
 * [endwise][endwise-vimorg], 2011-08-30  _from [github][endwise-github]_
@@ -36,11 +38,11 @@ To update:
 
 # Color Schemes
 * [pigraph.vim](https://raw.github.com/fmeyer/vim-pigraph/master/colors/pigraph.vim), 2011-04-06
+* [monokai.vim](http://desintegr.googlecode.com/svn/config/vim/colors/monokai.vim), 2008-02-27
 
 # Notes
-
 On Vim updates, check which ruby interpreter it compiled against (a simple `vim --version`
-should tell you) and be sure to recompile command-t using the same ruby version,
+should do) and be sure to recompile command-t using the same ruby version,
 or else gVim might crash.
 
 
