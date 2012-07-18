@@ -1,4 +1,4 @@
-# Usage
+## Usage
 On Home dir:
 
 ```sh
@@ -15,11 +15,11 @@ To update:
     $ git pull origin master
 ```
 
-# Building vim
+### Building vim
 See [BUILD](https://github.com/lsdr/vim-folder/blob/master/BUILD.markdown) for
 further instructions.
 
-# Plugin Versions
+## Plugins
 * [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.4
@@ -33,14 +33,14 @@ further instructions.
 * [vimerl][vimerl-vimorg], 2012-03-27 _from [github][vimerl-github]_
 * [virtualenv][virtualenv-vimorg], 2012-05-29 _from [github][virtualenv-github]_
 
-# Syntax
+### Syntax
 * [python 3.0](http://www.vim.org/scripts/script.php?script_id=790), 3.0.7
 
-# Color Schemes
+### Color Schemes
 * [pigraph.vim](https://raw.github.com/fmeyer/vim-pigraph/master/colors/pigraph.vim), 2011-04-06
 * [monokai.vim](http://desintegr.googlecode.com/svn/config/vim/colors/monokai.vim), 2008-02-27
 
-# Notes
+## Notes
 On Vim updates, check which ruby interpreter it compiled against (a simple `vim --version`
 should do) and be sure to recompile command-t using the same ruby version,
 or else gVim might crash.
