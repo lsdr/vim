@@ -1,11 +1,20 @@
 My instances of vim are build from the latest [MacVim][macvim] snapshot, using
-[`homebrew`][hb] and a patched version of macvim formula to include the
-following:
+[`homebrew`][hb] and a patched version of macvim formula.
+
+## Tweaking macvim.rb
+Since I don't like all the defaults in `macvim.rb`, I alter the formula with
+the following:
 
     --with-features=normal
     --enable-pythoninterp=dynamic
     --with-compiledby=Luiz Rocha
 
+I also remove the following options to disable support for Perl/TCL:
+
+    --enable-perlinterp
+    --enable-tclinterp
+
+### Reasoning
 Setting `features` to `normal` reduces a little the number of useless stuff
 vim's compiled with. Check [this table][vim-feats] to see which feature is 
 enabled/disabled in each feature-set.
@@ -14,10 +23,17 @@ Passing `dynamic` to `--enable-pythoninterp` [makes vim load python][vim-py]
 dynamically, picking the preferred python interpreter instead of just using the
 (often broken) pre-installed Apple Python.
 
-I also remove the following options to disable support for Perl/TCL:
+The `--with-compiledby=Luiz Rocha` flag serves no purpose at all. I do it just
+for fun. You can change it to whatever you want (your name, nick) or simply
+remove it.
 
-    --enable-perlinterp
-    --enable-tclinterp
+## Installing
+After patching `macvim.rb` formula and commiting it to my local `homebrew`,
+simply run:
+
+```sh
+	$ brew install macvim --override-system-vim --enable-clipboard
+```
 
 That's it.
 
