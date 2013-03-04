@@ -23,15 +23,15 @@ further instructions.
 * [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
 * [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.4
-* [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 1.0
-* [endwise][endwise-vimorg], 2011-08-30  _from [github][endwise-github]_
+* [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 1.1
+* [endwise][endwise-vimorg], 2013-01-01  _from [github][endwise-github]_
 * [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
-* [NERD_Commenter][nerdcommenter-vimorg], 2012-03-22  _from [github][nerdcommenter-github]_
-* [rails.vim][rails-vimorg], 2012-04-19  _from [github][rails-github]_ 
-* [vim-ruby][vim-ruby-github], 2012-04-20 _from [github][vim-ruby-github]_
-* [vim-rvm][rvm-github], 2012-05-31 _from [github][rvm-github]_
-* [vimerl][vimerl-vimorg], 2012-03-27 _from [github][vimerl-github]_
-* [virtualenv][virtualenv-vimorg], 2012-05-29 _from [github][virtualenv-github]_
+* [NERD_Commenter][nerdcommenter-vimorg], 2013-01-10  _from [github][nerdcommenter-github]_
+* [rails.vim][rails-vimorg], 2013-03-04  _from [github][rails-github]_ 
+* [vim-ruby][vim-ruby-github], 2013-02-25 _from [github][vim-ruby-github]_
+* [vim-rvm][rvm-github], 2013-02-22 _from [github][rvm-github]_
+* [vimerl][vimerl-vimorg], 2013-02-06 _from [github][vimerl-github]_
+* [virtualenv][virtualenv-vimorg], 2012-07-19 _from [github][virtualenv-github]_
 
 ### Syntax
 * [python 3.0](http://www.vim.org/scripts/script.php?script_id=790), 3.0.7
