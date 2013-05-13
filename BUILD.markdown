@@ -7,7 +7,6 @@ the following:
 
     --with-features=normal
     --enable-pythoninterp=dynamic
-    --with-compiledby=Luiz Rocha
 
 I also remove the following options to disable support for Perl/TCL:
 
@@ -22,10 +21,6 @@ enabled/disabled in each feature-set.
 Passing `dynamic` to `--enable-pythoninterp` [makes vim load python][vim-py]
 dynamically, picking the preferred python interpreter instead of just using the
 (often broken) pre-installed Apple Python.
-
-The `--with-compiledby=Luiz Rocha` flag serves no purpose at all. I do it just
-for fun. You can change it to whatever you want (your name, nick) or simply
-remove it.
 
 ## Installing
 After patching `macvim.rb` formula and commiting it to my local `homebrew`,
@@ -42,3 +37,4 @@ That's it.
 [hb]: https://github.com/mxcl/homebrew
 [vim-feats]: http://mysite.verizon.net/astronaut/vim/vimfeat.html
 [vim-py]: http://yyhh.org/blog/2012/05/install-vim-homebrew-python-os-x
+
