@@ -89,6 +89,10 @@ command! Helptags helptags ~/.vim/doc
 "" clear search highlights
 nmap <silent> ,/ :nohlsearch<CR>
 
+"" python/ruby run current buffer code
+:map <leader>r :!ruby %<cr>
+:map <leader>p :!python %<cr>
+
 "" make the arrow keys switch between splits
 map <up> <C-w>k
 map <down> <C-w>j
