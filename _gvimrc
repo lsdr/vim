@@ -5,7 +5,7 @@
 if has("gui_gtk2")
   :set guifont=Inconsolata\ 10
 else
-  :set guifont=Monaco:h12
+  :set guifont=Droid\ Sans\ Mono:h14
 end
 set antialias
 
