@@ -81,19 +81,18 @@ set statusline+=%{rvm#statusline_ft_ruby()}
 set statusline+=%=
 set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
 
-" a few useful shortcuts
+" few useful shortcuts
 command! Rehash source ~/.vimrc
 command! Helptags helptags ~/.vim/doc
 
-" remappings and shortcuts
-"" clear search highlights
+" clear search highlights
 nmap <silent> ,/ :nohlsearch<CR>
 
-"" python/ruby run current buffer code
+" python/ruby run current buffer code
 :map <leader>r :!ruby %<cr>
 :map <leader>p :!python %<cr>
 
-"" make the arrow keys switch between splits
+" make the arrow keys switch between splits
 map <up> <C-w>k
 map <down> <C-w>j
 map <right> <C-w>l
@@ -101,11 +100,12 @@ map <left> <C-w>h
 
 "" identify the syntax highlighting group used at the cursor
 "" http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
-map <leader>hig :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+" map <leader>hig :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+" \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+" \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-" python specifics
+" syntax
+"" python specifics
 autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set expandtab
