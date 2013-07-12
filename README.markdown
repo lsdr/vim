@@ -3,9 +3,8 @@ On Home dir:
 
 ```sh
     $ git clone git://github.com/lsdr/vim-folder.git .vim  
-    $ ln -s .vim/_vimrc .vimrc  
-    $ ln -s .vim/_gvimrc .gvimrc  
-    $ mkdir -p .vim/tmp  
+    $ cd .vim
+    $ make install
 ```
 
 To update:
