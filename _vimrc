@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kib_darktango.vim'
 Bundle 'Solarized'
 Bundle 'sexy-railscasts'
+Bundle 'aerosol/vim-compot'
 
 " plugins
 Bundle 'AutoClose'
