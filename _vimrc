@@ -18,6 +18,11 @@ Bundle 'kib_darktango.vim'
 Bundle 'Solarized'
 Bundle 'sexy-railscasts'
 
+" plugins
+Bundle 'AutoClose'
+Bundle 'AutoComplPop'
+
+
 " enable filetype specifics
 filetype on
 filetype plugin on
