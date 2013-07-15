@@ -106,7 +106,7 @@ set statusline=%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
 set statusline+=\ \ [
 set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
 set statusline+=]\ "
-set statusline+=%{VirtualEnvCondStatusline()}
+set statusline+=%{virtualenv#statusline()}
 set statusline+=%{rvm#statusline_ft_ruby()}
 set statusline+=%=
 set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
@@ -128,14 +128,7 @@ map <down> <C-w>j
 map <right> <C-w>l
 map <left> <C-w>h
 
-"" identify the syntax highlighting group used at the cursor
-"" http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
-" map <leader>hig :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-" \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-" \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
-" syntax
-"" python specifics
+" python specifics
 autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set expandtab
@@ -150,7 +143,6 @@ let NERDSpaceDelims=1
 let NERDMenuMode=0
 
 "" rails.vim
-""" small adjustment to handle html files better
 autocmd User Rails if &filetype != 'ruby' | setlocal sw=4 sts=4 noexpandtab | endif
 autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
 
