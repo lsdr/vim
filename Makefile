@@ -1,19 +1,24 @@
 # Makefile for lsdr-vim distribution
+DIST=$(HOME)/.vim
+
 all: install
 
-DIST=$(HOME)/.vim
-TMPDIR=$(DIST)/tmp
-# GIT=$(shell which git)
-# clone_repos:
-#         @if [ -x $(GIT) ]; then \
-#           @echo Fetching lsdr-vim for Github...; \
-#           $(GIT) clone git@github.com:lsdr/vim.git .vim; \
-#         else \
-#           @echo Sorry, "\033[0;31mgit is required\033[0m" to install lsdr-vim distro. "\033[1;37mQuitting\033[0m".; \
-#           exit 1; \
-#         fi
-#
-check_install:
+vimrc gvimrc:
+	ln -nsf $(DIST)/_$@ $(HOME)/.$@
+
+tmpdir bundledir:
+	mkdir -p $(DIST)/$(patsubst %dir,%,$@)
+
+init_bundle:
+	@printf "Initializing bundles...\n";
+	@if [ ! -d $(DIST)/bundle/vundle ]; then \
+	  git clone https://github.com/gmarik/vundle.git $(DIST)/bundle/vundle; \
+	fi
+
+load_bundle: init_bundle
+	vim +BundleInstall +qall
+
+env_setup:
 	@printf "Looking for a lsdr-vim distro... ";
 	@if [ ! -d $(DIST) ]; then \
 	  printf "Ops! \033[1;31m~/.vim is missing\033[0m, but is required to install. \033[1;37mQuitting\033[0m.\n"; \
@@ -22,30 +27,18 @@ check_install:
 	  printf "OK!\n"; \
 	fi
 
-install: check_install
-	@printf "Installing. May take a while... \n";
-	@if [ ! -d $(TMPDIR) ]; then \
-	  printf "creating $(TMPDIR)..."; \
-	  mkdir -p $(TMPDIR); \
-	  printf "OK!\n"; \
-	else \
-	  printf "$(TMPDIR) already exists, skipping...\n"; \
-	fi
-	@if [ ! -h $(HOME)/.vimrc ]; then \
-	  printf "symlinking .vimrc\n"; \
-	  ln -s $(DIST)/_vimrc $(HOME)/.vimrc; \
-	else \
-	  printf ".vimrc already symlinked\n"; \
-	fi
-	@if [ ! -h $(HOME)/.gvimrc ]; then \
-	  printf "symlinking .gvimrc\n"; \
-	  ln -s $(DIST)/_gvimrc $(HOME)/.gvimrc; \
-	else \
-	  printf ".gvimrc already symlinked\n"; \
-	fi
+install: env_setup tmpdir bundledir load_bundle vimrc gvimrc
 	@printf "All set. \033[1;32mvim is ready\033[0m to code.\n";
 
 clean:
-	@rm -fr .vimrc .gvimrc
+	rm -fr $(HOME)/.vimrc
+	rm -fr $(HOME)/.gvimrc
+	rm -fr $(DIST)/tmp
+	rm -fr $(DIST)/bundle
 	@printf "Done. lsdr-vim was \033[1;37msuccessfully uninstalled\033[0m. Moving on...\n";
+
+# implode:
+#         cd $(HOME)
+#         rm -fr $(DIST)
+#         @printf "There you go. lsdr-vim was \033[1;37mfully imploded\033[0m.\n";
 
