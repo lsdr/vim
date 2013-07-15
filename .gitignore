@@ -16,6 +16,7 @@
 
 tmp/*
 log/*
+bundle/*
 backup/*
 doc/tags-ja
 

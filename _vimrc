@@ -21,12 +21,18 @@ Bundle 'sexy-railscasts'
 " plugins
 Bundle 'AutoClose'
 Bundle 'AutoComplPop'
+Bundle 'nginx.vim'
 
+Bundle 'tpope/vim-rvm'
+Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'jimenezrick/vimerl'
 Bundle 'scrooloose/nerdcommenter'
-
+Bundle 'jmcantrell/vim-virtualenv'
 
 " enable filetype specifics
 filetype on
@@ -153,7 +159,7 @@ let g:CommandTMaxDepth=10
 let g:CommandTMaxHeight=10
 
 "" nginx.vim
-au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
+" au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
 
 "" virtualenv.vim
 let g:virtualenv_directory='/Users/lsdr/.pvm'
