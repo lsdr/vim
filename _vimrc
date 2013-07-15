@@ -14,6 +14,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " colorschemes
+Bundle 'lsdr/monokai'
 Bundle 'kib_darktango.vim'
 Bundle 'Solarized'
 Bundle 'sexy-railscasts'
