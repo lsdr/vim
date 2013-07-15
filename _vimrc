@@ -5,6 +5,19 @@
 " http://mysite.verizon.net/astronaut/vim/vimfeat.html
 "
 
+" stuff required by Vundle to work
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle required! 
+Bundle 'gmarik/vundle'
+
+" colorschemes
+Bundle 'kib_darktango.vim'
+Bundle 'Solarized'
+Bundle 'sexy-railscasts'
+
 " enable filetype specifics
 filetype on
 filetype plugin on
