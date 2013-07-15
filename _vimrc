@@ -22,6 +22,11 @@ Bundle 'sexy-railscasts'
 Bundle 'AutoClose'
 Bundle 'AutoComplPop'
 
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+
+Bundle 'scrooloose/nerdcommenter'
+
 
 " enable filetype specifics
 filetype on
