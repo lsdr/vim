@@ -20,27 +20,31 @@ further instructions.
 
 ## Plugins, Colorschemes, Syntaxes et al
 ```VimL
-    gmarik/vundle
-    lsdr/monokai
-    kib_darktango.vim
-    Solarized
-    sexy-railscasts
-    aerosol/vim-compot
-    EasyGrep
-    AutoClose
-    AutoComplPop
-    nginx.vim
-    pythoncomplete
-    tpope/vim-rvm
-    tpope/vim-rails
-    tpope/vim-endwise
-    tpope/vim-surround
-    tpope/vim-fugitive
-    rking/ag.vim
-    vim-ruby/vim-ruby
-    jimenezrick/vimerl
-    scrooloose/nerdcommenter
-    jmcantrell/vim-virtualenv
+" colorschemes
+Bundle 'lsdr/monokai'
+Bundle 'kib_darktango.vim'
+Bundle 'Solarized'
+Bundle 'sexy-railscasts'
+Bundle 'aerosol/vim-compot'
+
+" plugins
+" Bundle 'EasyGrep'
+Bundle 'AutoClose'
+Bundle 'AutoComplPop'
+Bundle 'nginx.vim'
+Bundle 'pythoncomplete'
+
+Bundle 'tpope/vim-rvm'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+
+Bundle 'rking/ag.vim'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'jimenezrick/vimerl'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'jmcantrell/vim-virtualenv'
 ```
 
 ## Notes
