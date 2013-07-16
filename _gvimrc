@@ -12,8 +12,9 @@ set antialias
 set background=dark
 color monokai
 
-" we don't need no stinkin' toolbar!
+" we don't need no stinkin' toolbar/right scroller!
 set guioptions-=T
+set guioptions-=r
 
 " window size
 set lines=45
