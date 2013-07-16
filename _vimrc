@@ -1,16 +1,14 @@
 " lsdr .vimrc
-" github.com/lsdr/vim-folder
+" github.com/lsdr/vim
 "
 " reference for building vim:
 " http://mysite.verizon.net/astronaut/vim/vimfeat.html
 "
 
-" stuff required by Vundle to work
+" bootstrap vundle 
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
-" let Vundle manage Vundle required! 
 Bundle 'gmarik/vundle'
 
 " colorschemes
@@ -21,9 +19,11 @@ Bundle 'sexy-railscasts'
 Bundle 'aerosol/vim-compot'
 
 " plugins
+Bundle 'EasyGrep'
 Bundle 'AutoClose'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
+Bundle 'pythoncomplete'
 
 Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-rails'
@@ -138,6 +138,10 @@ autocmd FileType python set expandtab
 "" autocomplpop
 let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
+
+"" EasyGrep
+set grepprg=ack
+let g:EasyGrepCommand=1
 
 "" NERDCommenter
 let NERDSpaceDelims=1
