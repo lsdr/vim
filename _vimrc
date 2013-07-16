@@ -19,7 +19,7 @@ Bundle 'sexy-railscasts'
 Bundle 'aerosol/vim-compot'
 
 " plugins
-Bundle 'EasyGrep'
+" Bundle 'EasyGrep'
 Bundle 'AutoClose'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
@@ -31,6 +31,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'rking/ag.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jimenezrick/vimerl'
 Bundle 'scrooloose/nerdcommenter'
@@ -140,8 +141,11 @@ let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
 "" EasyGrep
-set grepprg=ack
-let g:EasyGrepCommand=1
+" set grepprg=ack
+" let g:EasyGrepCommand=1
+
+" ag.vim
+let g:agprg="ag --nocolor --nogroup --column --stats --hidden -i"
 
 "" NERDCommenter
 let NERDSpaceDelims=1
