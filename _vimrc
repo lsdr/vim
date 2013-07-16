@@ -20,7 +20,7 @@ Bundle 'aerosol/vim-compot'
 
 " plugins
 " Bundle 'EasyGrep'
-Bundle 'AutoClose'
+" Bundle 'AutoClose'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
@@ -34,8 +34,11 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'rking/ag.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jimenezrick/vimerl'
+Bundle 'Townk/vim-autoclose'
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'terryma/vim-multiple-cursors'
 
 " enable filetype specifics
 filetype on
@@ -75,6 +78,7 @@ set fileformats=unix,mac,dos
 set cursorline
 set autoread " automatically reloads file if changed outside
 set splitbelow " split new window below current window
+set splitright " split new window right of the current one
 set nojoinspaces " use just one space to join strings
 
 " tab/indentation configuration
@@ -177,4 +181,11 @@ let g:CommandTMaxHeight=10
 let g:virtualenv_directory='/Users/lsdr/.pvm'
 let g:virtualenv_auto_activate=1
 let g:virtualenv_stl_format='(py:%n)'
+
+"" vim-multiple-cursors
+" Default mapping
+" let g:multi_cursor_next_key='<C-n>'
+" let g:multi_cursor_prev_key='<C-p>'
+" let g:multi_cursor_skip_key='<C-x>'
+" let g:multi_cursor_quit_key='<Esc>'
 
