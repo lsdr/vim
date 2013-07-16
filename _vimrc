@@ -134,6 +134,16 @@ map <left> <C-w>h
 autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set expandtab
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+" once pydoc window gets boring, uncomment the next line
+" autocmd FileType python set completeopt-=preview
+
+" ruby specifics
+" let g:rubycomplete_rails=0
+" let g:rubycomplete_classes_in_global=1
+" let g:rubycomplete_buffer_loading=1
+" let g:rubycomplete_include_object=1
+" let g:rubycomplete_include_objectspace=1
 
 " plugins
 "" autocomplpop
