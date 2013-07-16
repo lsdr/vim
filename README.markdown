@@ -2,7 +2,7 @@
 On Home dir:
 
 ```sh
-    $ git clone git://github.com/lsdr/vim-folder.git .vim  
+    $ git clone git://github.com/lsdr/vim.git .vim  
     $ cd .vim
     $ make install
 ```
@@ -18,44 +18,33 @@ To update:
 See [BUILD](https://github.com/lsdr/vim-folder/blob/master/BUILD.markdown) for
 further instructions.
 
-## Plugins
-* [autoclose](http://www.vim.org/scripts/script.php?script_id=1849), 1.2
-* [autocomplpop](http://www.vim.org/scripts/script.php?script_id=1879), 2.14.1
-* [command-t](http://www.vim.org/scripts/script.php?script_id=3025), 1.4
-* [EasyGrep](http://www.vim.org/scripts/script.php?script_id=2438), 1.1
-* [endwise][endwise-vimorg], 2013-01-01  _from [github][endwise-github]_
-* [matchit](http://www.vim.org/scripts/script.php?script_id=39), 1.13.2
-* [NERD_Commenter][nerdcommenter-vimorg], 2013-01-10  _from [github][nerdcommenter-github]_
-* [rails.vim][rails-vimorg], 2013-03-04  _from [github][rails-github]_ 
-* [vim-ruby][vim-ruby-github], 2013-02-25 _from [github][vim-ruby-github]_
-* [vim-rvm][rvm-github], 2013-02-22 _from [github][rvm-github]_
-* [vimerl][vimerl-vimorg], 2013-02-06 _from [github][vimerl-github]_
-* [virtualenv][virtualenv-vimorg], 2012-07-19 _from [github][virtualenv-github]_
-
-### Syntax
-* [python 3.0](http://www.vim.org/scripts/script.php?script_id=790), 3.0.7
-
-### Color Schemes
-* [pigraph.vim](https://raw.github.com/fmeyer/vim-pigraph/master/colors/pigraph.vim), 2011-04-06
-* [monokai.vim](http://desintegr.googlecode.com/svn/config/vim/colors/monokai.vim), 2008-02-27
+## Plugins, Colorschemes, Syntaxes et al
+```VimL
+    gmarik/vundle
+    lsdr/monokai
+    kib_darktango.vim
+    Solarized
+    sexy-railscasts
+    aerosol/vim-compot
+    EasyGrep
+    AutoClose
+    AutoComplPop
+    nginx.vim
+    pythoncomplete
+    tpope/vim-rvm
+    tpope/vim-rails
+    tpope/vim-endwise
+    tpope/vim-surround
+    tpope/vim-fugitive
+    rking/ag.vim
+    vim-ruby/vim-ruby
+    jimenezrick/vimerl
+    scrooloose/nerdcommenter
+    jmcantrell/vim-virtualenv
+```
 
 ## Notes
 On Vim updates, check which ruby interpreter it compiled against (a simple `vim --version`
 should do) and be sure to recompile command-t using the same ruby version,
 or else gVim might crash.
 
-
-[nerdtree-github]: http://github.com/scrooloose/nerdtree
-[nerdtree-vimorg]: http://www.vim.org/scripts/script.php?script_id=1658 
-[nerdcommenter-github]: http://github.com/scrooloose/nerdcommenter
-[nerdcommenter-vimorg]: http://www.vim.org/scripts/script.php?script_id=1218
-[rails-github]: https://github.com/tpope/vim-rails
-[rails-vimorg]: http://www.vim.org/scripts/script.php?script_id=1567
-[endwise-github]: https://github.com/tpope/vim-endwise
-[endwise-vimorg]: http://www.vim.org/scripts/script.php?script_id=2386 
-[vim-ruby-github]: https://github.com/vim-ruby/vim-ruby
-[vimerl-vimorg]: http://www.vim.org/scripts/script.php?script_id=3743
-[vimerl-github]: https://github.com/jimenezrick/vimerl
-[virtualenv-vimorg]: http://www.vim.org/scripts/script.php?script_id=3486
-[virtualenv-github]: https://github.com/jmcantrell/vim-virtualenv
-[rvm-github]: https://github.com/tpope/vim-rvm
