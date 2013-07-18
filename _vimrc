@@ -32,6 +32,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 
 Bundle 'rking/ag.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'sukima/xmledit'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jimenezrick/vimerl'
 Bundle 'Townk/vim-autoclose'
@@ -92,7 +94,7 @@ set smartindent
 " tab completion
 set wildmenu
 set wildmode=list:longest
-set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git,*.log
+set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git,*.log,*.zip,*.so,*/tmp/*
 
 " search pattern highlight/incremental
 set ignorecase
@@ -169,10 +171,11 @@ let NERDMenuMode=0
 autocmd User Rails if &filetype != 'ruby' | setlocal sw=4 sts=4 noexpandtab | endif
 autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
 
-"" command-t
-let g:CommandTMaxFiles=5000
-let g:CommandTMaxDepth=10
-let g:CommandTMaxHeight=10
+"" ctrlp
+let g:ctrlp_map = '<leader>t'
+nmap <leader>b :CtrlPBuffer<cr>
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 "" nginx.vim
 " au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
@@ -188,4 +191,14 @@ let g:virtualenv_stl_format='(py:%n)'
 " let g:multi_cursor_prev_key='<C-p>'
 " let g:multi_cursor_skip_key='<C-x>'
 " let g:multi_cursor_quit_key='<Esc>'
+
+"" fugitive
+map <leader>gs :Gstatus<cr>
+map <leader>gd :Gdiff<cr>
+
+"" xmledit
+" let g:xml_syntax_folding=1
+" au FileType xml setlocal foldmethod=syntax
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 

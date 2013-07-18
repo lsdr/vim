@@ -24,12 +24,6 @@ store per-bundled-plugin settings or to mix plugin settings with Bundle calls in
 2. Update `make clean` to remove bundles too.
 3. Add a `make implode` task to destroy the cloned .vim folder too.
 
-
-## Not using Vundle yet
-
-* cmd-t
-* xmledit
-
 ## Omnicompletion
 
 Set-up correctly, make full use of this feature
