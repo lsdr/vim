@@ -15,7 +15,7 @@ To update:
 ```
 
 ### Building vim
-See [BUILD](https://github.com/lsdr/vim-folder/blob/master/BUILD.markdown) for
+See [BUILD](https://github.com/lsdr/vim-folder/blob/master/BUILD.md) for
 further instructions.
 
 ## Plugins, Colorschemes, Syntaxes et al
