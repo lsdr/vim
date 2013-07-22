@@ -1,10 +1,6 @@
-" lsdr .vimrc
+" lsdr .vimrc file
 " github.com/lsdr/vim
 "
-" reference for building vim:
-" http://mysite.verizon.net/astronaut/vim/vimfeat.html
-"
-
 " bootstrap vundle 
 filetype off
 set rtp+=~/.vim/bundle/vundle/
@@ -125,11 +121,11 @@ command! Rehash source ~/.vimrc
 command! Helptags helptags ~/.vim/doc
 
 " clear search highlights
-nmap <silent> ,/ :nohlsearch<CR>
+nmap <silent> ,/ :nohlsearch<cr>
 
 " python/ruby run current buffer code
-:map <leader>r :!ruby %<cr>
-:map <leader>p :!python %<cr>
+map <leader>r :!ruby %<cr>
+map <leader>p :!python %<cr>
 
 " make the arrow keys switch between splits
 map <up> <C-w>k
