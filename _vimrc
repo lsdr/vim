@@ -38,6 +38,7 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'puppetlabs/puppet-syntax-vim'
 
 " enable filetype specifics
 filetype on
