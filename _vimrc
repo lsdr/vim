@@ -21,7 +21,7 @@ Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
 
-Bundle 'tpope/vim-rvm'
+" Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
@@ -113,7 +113,7 @@ set statusline+=\ \ [
 set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
 set statusline+=]\ "
 set statusline+=%{virtualenv#statusline()}
-set statusline+=%{rvm#statusline_ft_ruby()}
+" set statusline+=%{rvm#statusline_ft_ruby()}
 set statusline+=%=
 set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
 
