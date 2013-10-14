@@ -21,3 +21,10 @@ http://gajon.org/common-lisp-development-vim/
 http://cromwellhaus.com/2013/07/my-learning-elixir-erlang-setup/
 http://www.codeography.com/2013/06/17/replacing-all-the-things-with-unite-vim.html
 
+## R Programming
+
+http://manuals.bioinformatics.ucr.edu/home/programming-in-r/vim-r
+http://en.wikibooks.org/wiki/R_Programming/Settings#Vi.2C_Vim_and_GVim
+http://www.vim.org/scripts/script.php?script_id=2628
+http://brokeringclosure.wordpress.com/2010/12/02/r-with-vim/
+
