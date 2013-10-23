@@ -13,6 +13,9 @@ Bundle 'kib_darktango.vim'
 Bundle 'Solarized'
 Bundle 'sexy-railscasts'
 Bundle 'aerosol/vim-compot'
+Bundle 'noahfrederick/vim-hemisu'
+Bundle 'github-theme'
+Bundle '29decibel/codeschool-vim-theme'
 
 " plugins
 " Bundle 'EasyGrep'
@@ -21,7 +24,6 @@ Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
 
-" Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
