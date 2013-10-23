@@ -9,17 +9,11 @@ Bundle 'gmarik/vundle'
 
 " colorschemes
 Bundle 'lsdr/monokai'
-Bundle 'kib_darktango.vim'
-Bundle 'Solarized'
-Bundle 'sexy-railscasts'
-Bundle 'aerosol/vim-compot'
 Bundle 'noahfrederick/vim-hemisu'
 Bundle 'github-theme'
 Bundle '29decibel/codeschool-vim-theme'
 
 " plugins
-" Bundle 'EasyGrep'
-" Bundle 'AutoClose'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
