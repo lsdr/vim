@@ -150,10 +150,6 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
-"" EasyGrep
-" set grepprg=ack
-" let g:EasyGrepCommand=1
-
 " ag.vim
 let g:agprg="ag --nocolor --nogroup --column --stats --hidden -i"
 
