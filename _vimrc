@@ -10,8 +10,6 @@ Bundle 'gmarik/vundle'
 " colorschemes
 Bundle 'lsdr/monokai'
 Bundle 'noahfrederick/vim-hemisu'
-Bundle 'github-theme'
-Bundle '29decibel/codeschool-vim-theme'
 
 " plugins
 Bundle 'AutoComplPop'
