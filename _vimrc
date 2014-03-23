@@ -15,6 +15,7 @@ Bundle 'noahfrederick/vim-hemisu'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
+Bundle 'octave.vim'
 
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
@@ -142,6 +143,9 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 " let g:rubycomplete_buffer_loading=1
 " let g:rubycomplete_include_object=1
 " let g:rubycomplete_include_objectspace=1
+
+" octave
+autocmd FileType octave setlocal keywordprg=info\ octave\ --vi-keys\ --index-search
 
 " plugins
 "" autocomplpop
