@@ -15,7 +15,6 @@ Bundle 'noahfrederick/vim-hemisu'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
-Bundle 'octave.vim'
 
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
@@ -25,6 +24,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'rking/ag.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'sukima/xmledit'
+Bundle 'lsdr/octave.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jimenezrick/vimerl'
 Bundle 'Townk/vim-autoclose'
@@ -145,7 +145,14 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 " let g:rubycomplete_include_objectspace=1
 
 " octave
-autocmd FileType octave setlocal keywordprg=info\ octave\ --vi-keys\ --index-search
+augroup filetypedetect 
+  au! BufRead,BufNewFile *.m,*.oct set filetype=octave 
+augroup END
+
+"" enable octave keywords
+if has("autocmd") && exists("+omnifunc") 
+  autocmd Filetype octave if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete | endif 
+endif 
 
 " plugins
 "" autocomplpop
