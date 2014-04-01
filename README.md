@@ -48,9 +48,3 @@ Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'puppetlabs/puppet-syntax-vim'
 ```
-
-## Notes
-On Vim updates, check which ruby interpreter it compiled against (a simple `vim --version`
-should do) and be sure to recompile command-t using the same ruby version,
-or else gVim might crash.
-
