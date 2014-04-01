@@ -22,29 +22,31 @@ further instructions.
 ```VimL
 " colorschemes
 Bundle 'lsdr/monokai'
-Bundle 'kib_darktango.vim'
-Bundle 'Solarized'
-Bundle 'sexy-railscasts'
-Bundle 'aerosol/vim-compot'
+Bundle 'noahfrederick/vim-hemisu'
 
 " plugins
-" Bundle 'EasyGrep'
-Bundle 'AutoClose'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
 
-Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 
 Bundle 'rking/ag.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'sukima/xmledit'
+Bundle 'lsdr/octave.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jimenezrick/vimerl'
+Bundle 'Townk/vim-autoclose'
+Bundle 'mattonrails/vim-mix'
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'puppetlabs/puppet-syntax-vim'
 ```
 
 ## Notes
