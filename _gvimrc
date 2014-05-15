@@ -24,3 +24,5 @@ set columns=175
 " autocmd FocusLost * :wa
 " autocmd TabLeave * :w
 
+" vim: set ft=vim:
+

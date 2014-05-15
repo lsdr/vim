@@ -201,3 +201,5 @@ map <leader>gd :Gdiff<cr>
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 
+" vim: set ft=vim:
+
