@@ -20,20 +20,23 @@ further instructions.
 
 ## Plugins, Colorschemes, Syntaxes et al
 ```VimL
+" using Vundle
+Bundle 'gmarik/vundle'
+
 " colorschemes
 Bundle 'lsdr/monokai'
+Bundle 'chriskempson/base16-vim'
 Bundle 'noahfrederick/vim-hemisu'
+Bundle 'altercation/vim-colors-solarized'
 
 " plugins
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
-
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
-
 Bundle 'rking/ag.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'sukima/xmledit'

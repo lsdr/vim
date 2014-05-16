@@ -10,7 +10,9 @@ end
 set antialias
 
 set background=light
-color hemisu
+" color hemisu
+" color base16-monokai
+color solarized
 
 " we don't need no stinkin' toolbar/right scroller!
 set guioptions-=T
