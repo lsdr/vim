@@ -9,7 +9,6 @@ Bundle 'gmarik/vundle'
 
 " colorschemes
 Bundle 'lsdr/monokai'
-Bundle 'chriskempson/base16-vim'
 Bundle 'noahfrederick/vim-hemisu'
 Bundle 'altercation/vim-colors-solarized'
 
