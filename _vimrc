@@ -137,7 +137,7 @@ autocmd FileType python set shiftwidth=4
 autocmd FileType python set expandtab
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 " once pydoc window gets boring, uncomment the next line
-" autocmd FileType python set completeopt-=preview
+autocmd FileType python set completeopt-=preview
 
 " ruby specifics
 " let g:rubycomplete_rails=0
