@@ -8,12 +8,6 @@ http://stackoverflow.com/questions/13668583/how-to-start-erlang-shell-from-insid
 https://github.com/jimenezrick/vimerl
 https://github.com/mv/vim/blob/master/dot.vim/vim.d/plugins.vim
 
-https://raw.github.com/endel/.vim/master/vimrc
-https://raw.github.com/terryma/dotfiles/master/.vimrc
-https://raw.github.com/timss/vimconf/master/.vimrc
-https://raw.github.com/fisadev/fisa-vim-config/master/.vimrc
-https://raw.github.com/gmarik/vimfiles/1f4f26d42f54443f1158e0009746a56b9a28b053/vimrc
-
 http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide
 https://github.com/klen/python-modern
 
