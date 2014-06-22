@@ -1,6 +1,13 @@
 " lsdr .gvimrc
 " github.com/lsdr/vim-folder
 
+" if on mac, occupy full window in fullscreen mode
+if has("gui_macvim")
+  :set fuoptions=maxvert,maxhorz
+  nmap <silent> <leader>fu :set fu<cr>
+  nmap <silent> <leader>nfu :set nofu<cr>
+end
+
 " font and color
 if has("gui_gtk2")
   :set guifont=Inconsolata\ 12
@@ -9,22 +16,25 @@ else
 end
 set antialias
 
-set background=dark
+set background=light
 " color hemisu
-color monokai
-" color solarized
+" color monokai
+color solarized
 
 " we don't need no stinkin' toolbar/right scroller!
 set guioptions-=T
 set guioptions-=r
 
-" window size
-set lines=45
-set columns=175
+" make window as big as possible
+set lines=999
+set columns=9999
 
 " saving on focus lost
 " autocmd FocusLost * :wa
 " autocmd TabLeave * :w
+
+" avoid those pesky indentation problems when pasting to gui-vim
+set nopaste
 
 " vim: set ft=vim:
 

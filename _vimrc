@@ -88,8 +88,9 @@ set smartindent
 
 " tab completion
 set wildmenu
-set wildmode=list:longest
+set wildmode=list:longest,full
 set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git,*.log,*.zip,*.so,*/tmp/*
+set wildignore+=log/**,tmp/**,*DS_Store*,.hg
 
 " search pattern highlight/incremental
 set ignorecase
@@ -114,12 +115,19 @@ set statusline+=%{virtualenv#statusline()}
 set statusline+=%=
 set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
 
+" enable syntax-based completion if lacking a better option
+set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview " no annoying preview/doc buffers
+
 " few useful shortcuts
 command! Rehash source ~/.vimrc
 command! Helptags helptags ~/.vim/doc
 
+" close current buffer
+nmap <leader>x :close<cr>
+
 " clear search highlights
-nmap <silent> ,/ :nohlsearch<cr>
+nmap <silent> ,/ :nohls<cr>
 
 " python/ruby run current buffer code
 map <leader>r :!ruby %<cr>
@@ -137,7 +145,7 @@ autocmd FileType python set shiftwidth=4
 autocmd FileType python set expandtab
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 " once pydoc window gets boring, uncomment the next line
-autocmd FileType python set completeopt-=preview
+" autocmd FileType python set completeopt-=preview
 
 " ruby specifics
 " let g:rubycomplete_rails=0
@@ -164,7 +172,7 @@ let g:acp_behaviorFileLength=4
 " ag.vim
 let g:agprg="ag --nocolor --nogroup --column --stats --hidden -i"
 
-"" NERDCommenter
+" NERDCommenter
 let NERDSpaceDelims=1
 let NERDMenuMode=0
 
