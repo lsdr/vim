@@ -8,18 +8,18 @@ if has("gui_macvim")
   nmap <silent> <leader>nfu :set nofu<cr>
 end
 
-" font and color
-if has("gui_gtk2")
-  :set guifont=Inconsolata\ 12
+" if on mac, use Droid; on Linux, Inconsolata
+if has("gui_macvim")
+  :set guifont=Droid\ Sans\ Mono:h15
 else
-  :set guifont=Droid\ Sans\ Mono:h14
+  :set guifont=Inconsolata\ 12
 end
 set antialias
 
-set background=light
+" set background=light
 " color hemisu
-" color monokai
-color solarized
+set background=dark
+color monokai
 
 " we don't need no stinkin' toolbar/right scroller!
 set guioptions-=T
