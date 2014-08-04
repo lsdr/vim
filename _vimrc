@@ -7,6 +7,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
+" runtime! conf.d/*.vim 
+
 " colorschemes
 Bundle 'lsdr/monokai'
 Bundle 'noahfrederick/vim-hemisu'

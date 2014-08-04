@@ -6,7 +6,7 @@ all: install
 vimrc gvimrc:
 	ln -nsf $(DIST)/_$@ $(HOME)/.$@
 
-tmpdir bundledir:
+tmpdir bundledir conf.ddir:
 	mkdir -p $(DIST)/$(patsubst %dir,%,$@)
 
 init_bundle:
@@ -27,13 +27,14 @@ env_setup:
 	  printf "OK!\n"; \
 	fi
 
-install: env_setup tmpdir bundledir load_bundle vimrc gvimrc
+install: env_setup tmpdir bundledir conf.ddir load_bundle vimrc gvimrc
 	@printf "All set. \033[1;32mvim is ready\033[0m to code.\n";
 
 clean:
 	rm -fr $(HOME)/.vimrc
 	rm -fr $(HOME)/.gvimrc
 	rm -fr $(DIST)/tmp
+	rm -fr $(DIST)/conf.d
 	rm -fr $(DIST)/bundle
 	@printf "Done. lsdr-vim was \033[1;37msuccessfully uninstalled\033[0m. Moving on...\n";
 
