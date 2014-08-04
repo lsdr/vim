@@ -13,6 +13,7 @@ Bundle 'noahfrederick/vim-hemisu'
 Bundle 'altercation/vim-colors-solarized'
 
 " plugins
+Bundle 'EasyGrep'
 Bundle 'AutoComplPop'
 Bundle 'nginx.vim'
 Bundle 'pythoncomplete'
@@ -29,7 +30,7 @@ Bundle 'lsdr/octave.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jimenezrick/vimerl'
 Bundle 'Townk/vim-autoclose'
-Bundle 'mattonrails/vim-mix'
+Bundle 'mattreduce/vim-mix'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/nerdcommenter'
@@ -118,6 +119,9 @@ set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
 " enable syntax-based completion if lacking a better option
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview " no annoying preview/doc buffers
+
+" enable the matchit.vim shipped with vim
+runtime! macros/matchit.vim
 
 " few useful shortcuts
 command! Rehash source ~/.vimrc
