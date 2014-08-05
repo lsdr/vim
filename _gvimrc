@@ -1,6 +1,5 @@
 " lsdr .gvimrc
-" github.com/lsdr/vim
-
+"
 " if on mac, occupy full window in fullscreen mode
 if has("gui_macvim")
   :set fuoptions=maxvert,maxhorz
