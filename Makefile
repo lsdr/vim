@@ -6,7 +6,10 @@ all: install
 vimrc gvimrc:
 	ln -nsf $(DIST)/_$@ $(HOME)/.$@
 
-tmpdir bundledir conf.ddir:
+relink: vimrc gvimrc
+	@printf "Configuration files relinked!\n"
+
+tmpdir bundledir:
 	mkdir -p $(DIST)/$(patsubst %dir,%,$@)
 
 init_bundle:
@@ -27,7 +30,7 @@ env_setup:
 	  printf "OK!\n"; \
 	fi
 
-install: env_setup tmpdir bundledir conf.ddir load_bundle vimrc gvimrc
+install: env_setup tmpdir bundledir load_bundle vimrc gvimrc
 	@printf "All set. \033[1;32mvim is ready\033[0m to code.\n";
 
 clean:
