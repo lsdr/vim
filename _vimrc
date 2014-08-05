@@ -7,12 +7,13 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-" runtime! conf.d/*.vim 
-
-" colorschemes
-Bundle 'lsdr/monokai'
-Bundle 'noahfrederick/vim-hemisu'
-Bundle 'altercation/vim-colors-solarized'
+" splitted the configuration into several files, to make it easier to read, 
+" maintain and experiment with; instead of a 1000+ lines of configuration
+" bundled together now I have a dozen or so files, each with a single purpose
+" and containing everything related to that specific topic
+" 
+" loading extra configuration
+runtime! conf.d/*.vim 
 
 " plugins
 Bundle 'EasyGrep'
@@ -23,7 +24,6 @@ Bundle 'pythoncomplete'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
 
 Bundle 'rking/ag.vim'
 Bundle 'kien/ctrlp.vim'
@@ -59,9 +59,6 @@ set textwidth=80
 
 " encoding it UTF-8 no matter what the term says
 set encoding=utf-8
-
-" make command line two lines high
-set ch=2
 
 " interface and basic behavior
 set nocompatible
@@ -106,17 +103,6 @@ set incsearch
 " backup and swap settings
 set nobackup
 set directory=~/.vim/tmp
-
-" make the status line more informative
-set laststatus=2
-set statusline=%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
-set statusline+=\ \ [
-set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
-set statusline+=]\ "
-set statusline+=%{virtualenv#statusline()}
-" set statusline+=%{rvm#statusline_ft_ruby()}
-set statusline+=%=
-set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
 
 " enable syntax-based completion if lacking a better option
 set omnifunc=syntaxcomplete#Complete
@@ -206,10 +192,6 @@ let g:virtualenv_stl_format='(py:%n)'
 " let g:multi_cursor_prev_key='<C-p>'
 " let g:multi_cursor_skip_key='<C-x>'
 " let g:multi_cursor_quit_key='<Esc>'
-
-"" fugitive
-map <leader>gs :Gstatus<cr>
-map <leader>gd :Gdiff<cr>
 
 "" xmledit
 " let g:xml_syntax_folding=1
