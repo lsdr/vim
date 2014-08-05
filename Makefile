@@ -4,7 +4,7 @@ DIST=$(HOME)/.vim
 all: install
 
 vimrc gvimrc:
-	ln -nsf $(DIST)/$@ $(HOME)/.$@
+	ln -nsf $(DIST)/_$@ $(HOME)/.$@
 
 tmpdir bundledir conf.ddir:
 	mkdir -p $(DIST)/$(patsubst %dir,%,$@)
