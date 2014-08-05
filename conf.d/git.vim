@@ -1,4 +1,4 @@
-" git.vim -- all thing related with vim-git integration (cmdline, gists)
+" git.vim - all thing related with vim-git integration (cmdline, gists)
 "
 " Bundle 'tpope/vim-fugitive'
 

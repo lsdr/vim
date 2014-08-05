@@ -1,4 +1,4 @@
-" statusline.vim
+" statusline.vim - configure the statusline
 "
 " make command line two lines high
 set ch=2
