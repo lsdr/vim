@@ -5,11 +5,10 @@ autocmd FileType python set softtabstop=4
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set expandtab
 
-Bundle 'pythoncomplete'
-  " uses pythoncomplete to provide better completion
-  autocmd FileType python set omnifunc=pythoncomplete#Complete
-  " once pydoc window gets boring, uncomment the next line
-  " autocmd FileType python set completeopt-=preview
+" uses pythoncomplete to provide better completion
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+" once pydoc window gets boring, uncomment the next line
+" autocmd FileType python set completeopt-=preview
 
 Bundle 'jmcantrell/vim-virtualenv'
   let g:virtualenv_directory='/Users/lsdr/.pvm'

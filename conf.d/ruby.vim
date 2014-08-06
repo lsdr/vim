@@ -1,7 +1,9 @@
-" ruby.vim - ruby (and rails) programming plugins
+" ruby.vim - ruby (and rails) setting and plugins
 "
+
 Bundle 'vim-ruby/vim-ruby'
-  " ruby specifics
+  " ruby completion
+  autocmd FileType ruby set omnifunc=rubycomplete#Complete
   " let g:rubycomplete_rails=0
   " let g:rubycomplete_classes_in_global=1
   " let g:rubycomplete_buffer_loading=1
