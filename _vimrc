@@ -16,18 +16,14 @@ runtime! conf.d/*.vim
 
 " [TODO] move these plugins to separated files
 " plugins
-Bundle 'EasyGrep'
 Bundle 'AutoComplPop'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
-Bundle 'rking/ag.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jimenezrick/vimerl'
 Bundle 'Townk/vim-autoclose'
 Bundle 'mattreduce/vim-mix'
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'terryma/vim-multiple-cursors'
 
 " enable filetype specifics
 filetype on
@@ -125,25 +121,12 @@ map <left> <C-w>h
 let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
-" ag.vim
-let g:agprg="ag --nocolor --nogroup --column --stats --hidden -i"
-
-" NERDCommenter
-let NERDSpaceDelims=1
-let NERDMenuMode=0
 
 "" ctrlp
 let g:ctrlp_map = '<leader>t'
 nmap <leader>b :CtrlPBuffer<cr>
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
-"" vim-multiple-cursors
-" Default mapping
-" let g:multi_cursor_next_key='<C-n>'
-" let g:multi_cursor_prev_key='<C-p>'
-" let g:multi_cursor_skip_key='<C-x>'
-" let g:multi_cursor_quit_key='<Esc>'
 
 " vim: set ft=vim:
 
