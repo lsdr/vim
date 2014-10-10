@@ -14,5 +14,8 @@ Bundle 'tpope/vim-rails'
   autocmd User Rails if &filetype != 'ruby' | setlocal sw=4 sts=4 noexpandtab | endif
   autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
 
+Bundle 'slim-template/vim-slim'
+Bundle 'tpope/vim-haml'
+
 " vim: set ft=vim:
 
