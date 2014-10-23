@@ -22,3 +22,9 @@ http://en.wikibooks.org/wiki/R_Programming/Settings#Vi.2C_Vim_and_GVim
 http://www.vim.org/scripts/script.php?script_id=2628
 http://brokeringclosure.wordpress.com/2010/12/02/r-with-vim/
 
+https://github.com/klen/python-mode
+https://github.com/scrooloose/syntastic
+https://github.com/bling/vim-airline
+https://github.com/bling/vim-airline/blob/master/doc/airline.txt
+https://github.com/bling/vim-airline/tree/master/autoload/airline/themes
+https://github.com/bling/vim-airline/wiki/Screenshots
