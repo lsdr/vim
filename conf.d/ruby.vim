@@ -17,5 +17,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-haml'
 
+Bundle 'kchmck/vim-coffee-script'
+
 " vim: set ft=vim:
 
