@@ -1,7 +1,7 @@
 ## Usage
 On Home dir:
 ```sh
-    $ git clone git://github.com/lsdr/vim.git .vim  
+    $ git clone git@github.com:lsdr/vim.git .vim  
     $ cd .vim
     $ make install
 ```
