@@ -25,18 +25,16 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'mattreduce/vim-mix'
 Bundle 'elixir-lang/vim-elixir'
 
-" enable filetype specifics
-filetype on
-filetype plugin on
-filetype indent on
+" enable plugin/indentation based on filetype detection
+filetype plugin indent on
 
-" syntax highlight
-syntax on
+" enable syntax highlight
+syntax enable
 
 " set <leader> to comma
 let mapleader=','
 
-" just to speed things up
+" shift no longer required
 nnoremap ; :
 
 " text width limited to 80 cols
@@ -45,23 +43,31 @@ set textwidth=80
 " encoding it UTF-8 no matter what the term says
 set encoding=utf-8
 
+" 256 color term
+" set t_Co=256
+
+" improving redrawing smoothness
+set ttyfast
+set lazyredraw
+
 " interface and basic behavior
 set nocompatible
-set bs=2 " same as :set backspace=indent,eol,start
+set bs=2          " same as :set backspace=indent,eol,start
 set mousehide
 set nu
 set nuw=5
 set wrap
-set hidden " change buffer without saving
+set hidden        " change buffer without saving
 set ruler
-set scrolloff=5 " lines above/below cursor
+set scrolloff=5   " lines above/below cursor
 set history=750
 set fileformats=unix,mac,dos
 set cursorline
-set autoread " automatically reloads file if changed outside
-set splitbelow " split new window below current window
-set splitright " split new window right of the current one
-set nojoinspaces " use just one space to join strings
+set autoread      " automatically reloads file if changed outside
+set splitbelow    " split new window below current window
+set splitright    " split new window right of the current one
+set nojoinspaces  " use just one space to join strings
+set nostartofline " do not move cursor back to start of line when moving
 
 " tab/indentation configuration
 set softtabstop=2
@@ -88,10 +94,6 @@ set incsearch
 " backup and swap settings
 set nobackup
 set directory=~/.vim/tmp
-
-" enable syntax-based completion if lacking a better option
-set omnifunc=syntaxcomplete#Complete
-set completeopt-=preview " no annoying preview/doc buffers
 
 " enable the matchit.vim shipped with vim
 runtime! macros/matchit.vim
