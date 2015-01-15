@@ -43,9 +43,6 @@ set textwidth=80
 " encoding it UTF-8 no matter what the term says
 set encoding=utf-8
 
-" 256 color term
-" set t_Co=256
-
 " improving redrawing smoothness
 set ttyfast
 set lazyredraw
