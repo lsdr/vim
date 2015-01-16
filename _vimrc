@@ -4,7 +4,7 @@
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " splitted the configuration into several files, to make it easier to read, 
 " maintain and experiment with; instead of a 1000+ lines of configuration
@@ -16,14 +16,14 @@ runtime! conf.d/*.vim
 
 " [TODO] move these plugins to separated files
 " plugins
-Bundle 'AutoComplPop'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-surround'
-Bundle 'kien/ctrlp.vim'
-Bundle 'jimenezrick/vimerl'
-Bundle 'Townk/vim-autoclose'
-Bundle 'mattreduce/vim-mix'
-Bundle 'elixir-lang/vim-elixir'
+Plugin 'AutoComplPop'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jimenezrick/vimerl'
+Plugin 'Townk/vim-autoclose'
+Plugin 'mattreduce/vim-mix'
+Plugin 'elixir-lang/vim-elixir'
 
 " enable plugin/indentation based on filetype detection
 filetype plugin indent on

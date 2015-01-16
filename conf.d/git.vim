@@ -1,6 +1,6 @@
 " git.vim - all thing related with vim-git integration (cmdline, gists)
 "
-" Bundle 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 
 " fugitive mappings
 " map <leader>gs :Gstatus<cr>

@@ -1,8 +1,8 @@
 " colorschemes.vim - all avaliable external colorschemes
 "
-Bundle 'lsdr/monokai'
-Bundle 'romainl/Apprentice'
-Bundle 'noahfrederick/vim-hemisu'
+Plugin 'lsdr/monokai'
+Plugin 'romainl/Apprentice'
+Plugin 'noahfrederick/vim-hemisu'
 
 if has('gui_running')
   set background=light

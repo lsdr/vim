@@ -1,14 +1,14 @@
 " clojure.vim - support for clojure
 "
 
-Bundle 'paredit.vim'
+Plugin 'paredit.vim'
 
-Bundle 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-static'
   " align to column instead of quote
   let g:clojure_align_multiline_strings=1
 
-Bundle 'tpope/vim-leiningen'
-Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-fireplace'
-Bundle 'guns/vim-clojure-highlight'
+Plugin 'tpope/vim-leiningen'
+Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-fireplace'
+Plugin 'guns/vim-clojure-highlight'
 

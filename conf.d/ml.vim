@@ -1,6 +1,6 @@
 " ml.vim - standard ml programming tools (smj-nl mainly)
 "
-Bundle 'cypok/vim-sml'
+Plugin 'cypok/vim-sml'
 
 " vim: set ft=vim:
 

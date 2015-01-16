@@ -1,6 +1,6 @@
 " octave.vim - octave programming language tools 
 "
-Bundle 'lsdr/octave.vim'
+Plugin 'lsdr/octave.vim'
   " make .oct and .m files be recognized as octave filetype
   augroup filetypedetect 
     au! BufRead,BufNewFile *.m,*.oct set filetype=octave 

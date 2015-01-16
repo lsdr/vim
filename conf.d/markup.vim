@@ -1,8 +1,8 @@
 " markup.vim - HTML, XML, markdown and everything markup 
 "
-Bundle 'plasticboy/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 
-Bundle 'sukima/xmledit'
+Plugin 'sukima/xmledit'
   " use syntax to fold xml documents
   let g:xml_syntax_folding=1
   autocmd FileType xml  setlocal foldmethod=syntax

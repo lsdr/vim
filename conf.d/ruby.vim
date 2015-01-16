@@ -1,7 +1,7 @@
 " ruby.vim - ruby (and rails) setting and plugins
 "
 
-Bundle 'vim-ruby/vim-ruby'
+Plugin 'vim-ruby/vim-ruby'
   " ruby completion
   autocmd FileType ruby set omnifunc=rubycomplete#Complete
   let g:rubycomplete_rails=1
@@ -10,14 +10,14 @@ Bundle 'vim-ruby/vim-ruby'
   let g:rubycomplete_include_object=1
   let g:rubycomplete_include_objectspace=1
 
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
   autocmd User Rails if &filetype != 'ruby' | setlocal sw=4 sts=4 noexpandtab | endif
   autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
 
-Bundle 'slim-template/vim-slim'
-Bundle 'tpope/vim-haml'
+Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-haml'
 
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 
 " vim: set ft=vim:
 
