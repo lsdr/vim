@@ -16,10 +16,8 @@ runtime! conf.d/*.vim
 
 " [TODO] move these plugins to separated files
 " plugins
-Plugin 'AutoComplPop'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
 Plugin 'jimenezrick/vimerl'
 Plugin 'Townk/vim-autoclose'
 Plugin 'mattreduce/vim-mix'
@@ -114,18 +112,6 @@ map <up> <C-w>k
 map <down> <C-w>j
 map <right> <C-w>l
 map <left> <C-w>h
-
-" plugins
-"" autocomplpop
-let g:acp_behaviorKeywordLength=4
-let g:acp_behaviorFileLength=4
-
-
-"" ctrlp
-let g:ctrlp_map = '<leader>t'
-nmap <leader>b :CtrlPBuffer<cr>
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " vim: set ft=vim:
 
