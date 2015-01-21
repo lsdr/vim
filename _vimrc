@@ -2,9 +2,9 @@
 "
 " bootstrap vundle 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " splitted the configuration into several files, to make it easier to read, 
 " maintain and experiment with; instead of a 1000+ lines of configuration

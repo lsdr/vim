@@ -19,7 +19,7 @@ init_bundle:
 	fi
 
 load_bundle: init_bundle
-	vim +BundleInstall +qall
+	vim +PluginInstall +qall
 
 env_setup:
 	@printf "Looking for a lsdr-vim distro... ";
