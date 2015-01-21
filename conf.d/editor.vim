@@ -1,6 +1,6 @@
 " editor.vim - basic stuff that improve editing all-around
 "
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
   let g:ctrlp_map='<leader>t'
   nmap <leader>b :CtrlPBuffer<cr>
   let g:ctrlp_working_path_mode='ra'
