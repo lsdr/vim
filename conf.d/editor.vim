@@ -2,9 +2,9 @@
 "
 Plugin 'ctrlpvim/ctrlp.vim'
   let g:ctrlp_map='<leader>t'
-  nmap <leader>b :CtrlPBuffer<cr>
   let g:ctrlp_working_path_mode='ra'
   let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn|azk)$'
+  nnoremap <leader>b :CtrlPBuffer<cr>
 
 Plugin 'dkprice/vim-easygrep'
   " use system grep instead of vimgrep

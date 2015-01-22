@@ -1,5 +1,18 @@
-" lsdr .vimrc file
-"
+"" lsdr .vimrc file - basic settings, leader mapping etc
+""
+"" first things first: set leader textwidth etc
+" set <leader> to comma
+let mapleader=','
+
+" shift no longer required
+nnoremap ; :
+
+" text width limited to 80 cols
+set textwidth=80
+
+" encoding it UTF-8 no matter what the term says
+set encoding=utf-8
+
 " bootstrap vundle 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -14,7 +27,6 @@ Plugin 'gmarik/Vundle.vim'
 " loading extra configuration
 runtime! conf.d/*.vim 
 
-" [TODO] move these plugins to separated files
 " plugins
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround'
@@ -28,18 +40,6 @@ filetype plugin indent on
 
 " enable syntax highlight
 syntax enable
-
-" set <leader> to comma
-let mapleader=','
-
-" shift no longer required
-nnoremap ; :
-
-" text width limited to 80 cols
-set textwidth=80
-
-" encoding it UTF-8 no matter what the term says
-set encoding=utf-8
 
 " improving redrawing smoothness
 set ttyfast
