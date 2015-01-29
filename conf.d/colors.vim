@@ -1,6 +1,7 @@
 " colorschemes.vim - all avaliable external colorschemes
 "
 Plugin 'lsdr/monokai'
+Plugin 'gregsexton/Atom'
 Plugin 'romainl/Apprentice'
 Plugin 'noahfrederick/vim-hemisu'
 
