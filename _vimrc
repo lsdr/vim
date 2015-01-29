@@ -47,22 +47,28 @@ set lazyredraw
 
 " interface and basic behavior
 set nocompatible
-set bs=2          " same as :set backspace=indent,eol,start
+set bs=2              " same as :set backspace=indent,eol,start
 set mousehide
 set nu
 set nuw=5
 set wrap
-set hidden        " change buffer without saving
+set hidden            " change buffer without saving
 set ruler
-set scrolloff=5   " lines above/below cursor
+set scrolloff=5       " lines above/below cursor
 set history=750
 set fileformats=unix,mac,dos
 set cursorline
-set autoread      " automatically reloads file if changed outside
-set splitbelow    " split new window below current window
-set splitright    " split new window right of the current one
-set nojoinspaces  " use just one space to join strings
-set nostartofline " do not move cursor back to start of line when moving
+set autoread          " automatically reloads file if changed outside
+set splitbelow        " split new window below current window
+set splitright        " split new window right of the current one
+set nojoinspaces      " use just one space to join strings
+set formatoptions+=j  " delete comment when joining commented lines
+set nostartofline     " do not move cursor back to start of line when moving
+
+" if on mac, uses option-key as meta <M>; allow more key combos
+if exists('+macmeta')
+  set macmeta
+endif
 
 " tab/indentation configuration
 set softtabstop=2
@@ -101,15 +107,15 @@ command! Helptags helptags ~/.vim/doc
 nmap <leader>x :close<cr>
 
 " clear search highlights
-nmap <silent> ,/ :nohls<cr>
+nmap <silent>,/ :nohls<cr>
 
 " python/ruby run current buffer code
 map <leader>r :!ruby %<cr>
 map <leader>p :!python %<cr>
 
 " make the arrow keys switch between splits
-map <up> <C-w>k
-map <down> <C-w>j
+map <up>    <C-w>k
+map <down>  <C-w>j
 map <right> <C-w>l
 map <left> <C-w>h
 
