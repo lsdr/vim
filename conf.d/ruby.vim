@@ -11,12 +11,12 @@ Plugin 'vim-ruby/vim-ruby'
   let g:rubycomplete_include_objectspace=1
 
 Plugin 'tpope/vim-rails'
-  autocmd User Rails if &filetype != 'ruby' | setlocal sw=4 sts=4 noexpandtab | endif
+  autocmd User Rails if &filetype != 'ruby' | setlocal sw=2 sts=2 noexpandtab | endif
   autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
 
-Plugin 'slim-template/vim-slim'
+" Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-haml'
-
+Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 
 " vim: set ft=vim:
