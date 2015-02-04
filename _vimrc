@@ -27,14 +27,6 @@ Plugin 'gmarik/Vundle.vim'
 " loading extra configuration
 runtime! conf.d/*.vim 
 
-" plugins
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-surround'
-Plugin 'jimenezrick/vimerl'
-Plugin 'Townk/vim-autoclose'
-Plugin 'mattreduce/vim-mix'
-Plugin 'elixir-lang/vim-elixir'
-
 " enable plugin/indentation based on filetype detection
 filetype plugin indent on
 
@@ -79,8 +71,8 @@ set autoindent
 set smartindent
 
 " tab completion
-set wildmenu
 set wildmode=list:longest,full
+set wildmenu
 set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git,*.log,*.zip,*.so,*/tmp/*
 set wildignore+=log/**,tmp/**,*DS_Store*,.hg
 
@@ -117,7 +109,7 @@ map <leader>p :!python %<cr>
 map <up>    <C-w>k
 map <down>  <C-w>j
 map <right> <C-w>l
-map <left> <C-w>h
+map <left>  <C-w>h
 
 " vim: set ft=vim:
 
