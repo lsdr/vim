@@ -9,7 +9,8 @@ end
 
 " if on mac, use Droid; on Linux, Inconsolata
 if has("gui_macvim")
-  :set guifont=Droid\ Sans\ Mono:h14
+  :set guifont=Inconsolata-dz\ for\ Powerline:h14
+  " :set guifont=Droid\ Sans\ Mono:h14
 else
   :set guifont=Inconsolata\ 12
 end
