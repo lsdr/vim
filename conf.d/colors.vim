@@ -1,15 +1,16 @@
 " colorschemes.vim - all avaliable external colorschemes
 "
 Plugin 'lsdr/monokai'
-Plugin 'gregsexton/Atom'
 Plugin 'romainl/Apprentice'
 Plugin 'noahfrederick/vim-hemisu'
+Plugin 'chriskempson/base16-vim'
 
 if has('gui_running')
-  set background=light
-  colorscheme hemisu
+  set background=dark
+  colorscheme base16-eighties
 else
-  set t_Co=256 "enable 256 colors on terminal"
+  "enable 256 colors on terminal"
+  set t_Co=256
   set background=dark
   colorscheme apprentice
 endif
