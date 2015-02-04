@@ -12,3 +12,4 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fireplace'
 Plugin 'guns/vim-clojure-highlight'
 
+" vim: set ft=vim:
