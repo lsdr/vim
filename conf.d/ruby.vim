@@ -19,5 +19,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 
+Plugin 'tpope/vim-endwise'
+
 " vim: set ft=vim:
 

@@ -25,6 +25,8 @@ if executable('ag')
   let g:ctrlp_use_caching=0
 endif
 
+Plugin 'tpope/vim-surround'
+Plugin 'Townk/vim-autoclose'
 
 Plugin 'scrooloose/nerdcommenter'
   let NERDSpaceDelims=1

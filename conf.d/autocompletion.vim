@@ -4,9 +4,11 @@
 set omnifunc=syntaxcomplete#Complete
 " no annoying preview/doc buffers
 set completeopt-=preview 
+" skip search includes for completion
+set complete-=i
 
 Plugin 'AutoComplPop'
-  let g:acp_behaviorKeywordLength=4
-  let g:acp_behaviorFileLength=4
+  let g:acp_behaviorKeywordLength=3
+  let g:acp_behaviorFileLength=3
 
 " vim: set ft=vim:
