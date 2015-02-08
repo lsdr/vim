@@ -31,6 +31,8 @@ Plugin 'Townk/vim-autoclose'
 Plugin 'scrooloose/nerdcommenter'
   let NERDSpaceDelims=1
   let NERDMenuMode=0
+  " always comment the whole line, no matter where the cursor is
+  let NERDCommentWholeLinesInVMode=1
 
 Plugin 'terryma/vim-multiple-cursors'
   " Default mapping
