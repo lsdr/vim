@@ -9,5 +9,6 @@ Plugin 'sukima/xmledit'
   autocmd FileType xml  set omnifunc=xmlcomplete#CompleteTags noci
   autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 
+Plugin 'othree/html5.vim'
 
 " vim: set ft=vim:
