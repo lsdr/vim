@@ -2,9 +2,11 @@
 "
 Plugin 'ctrlpvim/ctrlp.vim'
   let g:ctrlp_map='<leader>t'
+  let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:7,results:10'
   let g:ctrlp_working_path_mode='ra'
-  let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn|azk)$'
+  let g:ctrlp_custom_ignore='\v\~$|\.(o|swp|pyc|png|gif|jpg|jpeg|svg|eot|ttf|woff)$|(^|[/\\])\.(hg|git|azk|bundle)($|[/\\])'
   nnoremap <leader>b :CtrlPBuffer<cr>
+  nnoremap <leader>. :CtrlPTag<cr>
 
 Plugin 'dkprice/vim-easygrep'
   " use system grep instead of vimgrep
