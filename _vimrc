@@ -46,7 +46,7 @@ set nuw=5
 set wrap
 set hidden            " change buffer without saving
 set ruler
-set scrolloff=5       " lines above/below cursor
+set scrolloff=3       " lines above/below cursor
 set history=750
 set fileformats=unix,mac,dos
 set cursorline
