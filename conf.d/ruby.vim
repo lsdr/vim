@@ -16,10 +16,13 @@ Plugin 'tpope/vim-rails'
 
 " Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-haml'
+  autocmd BufNewFile,BufRead *.haml set ft=haml
+
 Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
-
 Plugin 'tpope/vim-endwise'
+Plugin 'sunaku/vim-ruby-minitest'
+Plugin 'thoughtbot/vim-rspec'
 
 " vim: set ft=vim:
 
