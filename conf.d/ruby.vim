@@ -24,5 +24,13 @@ Plugin 'tpope/vim-endwise'
 Plugin 'sunaku/vim-ruby-minitest'
 Plugin 'thoughtbot/vim-rspec'
 
+if executable('rubocop')
+  Plugin 'ngmy/vim-rubocop'
+
+  " maps rubocop to <Leader>ru (default)
+  let g:vimrubocop_keymap=0
+  " nmap <Leader>r :RuboCop<CR>
+endif
+
 " vim: set ft=vim:
 
