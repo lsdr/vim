@@ -13,19 +13,19 @@ set textwidth=80
 " encoding it UTF-8 no matter what the term says
 set encoding=utf-8
 
-" bootstrap vundle 
+" bootstrap vundle
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 Plugin 'gmarik/Vundle.vim'
 
-" splitted the configuration into several files, to make it easier to read, 
+" splitted the configuration into several files, to make it easier to read,
 " maintain and experiment with; instead of a 1000+ lines of configuration
 " bundled together now I have a dozen or so files, each with a single purpose
 " and containing everything related to that specific topic
-" 
+"
 " loading extra configuration
-runtime! conf.d/*.vim 
+runtime! conf.d/*.vim
 
 " enable plugin/indentation based on filetype detection
 filetype plugin indent on
@@ -112,4 +112,3 @@ map <right> <C-w>l
 map <left>  <C-w>h
 
 " vim: set ft=vim:
-
