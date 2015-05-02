@@ -10,7 +10,6 @@ Plugin 'chriskempson/base16-vim'
 if has('gui_running')
   set background=light
   colorscheme hemisu
-  let g:airline_theme = 'hemisu_airline'
 else
   "enable 256 colors on terminal"
   set t_Co=256
