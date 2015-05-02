@@ -18,5 +18,6 @@ Plugin 'bling/vim-airline'
   let g:airline_powerline_fonts=0
   let g:airline_right_sep = '' 
   let g:airline_left_sep  = '' 
+
 " vim: set ft=vim:
 
