@@ -15,5 +15,5 @@ endfunction
 
 " run trimming automatically at every same:
 " autocmd BufWritePre *.rb,*.py,*.js :call <SID>StripTrailingWhitespaces()
-autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")<CR>
+" autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")<CR>
 

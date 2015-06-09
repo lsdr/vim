@@ -10,6 +10,7 @@ Plugin 'chriskempson/base16-vim'
 if has('gui_running')
   set background=light
   colorscheme hemisu
+  " colorscheme monokai
 else
   "enable 256 colors on terminal"
   set t_Co=256

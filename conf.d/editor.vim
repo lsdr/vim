@@ -19,7 +19,7 @@ if executable('ag')
   " specify the_silver_searcher bin path
   let g:agprg='ag --nocolor --nogroup --column --stats --hidden -i'
 
-  " switch system grep cmd to ag 
+  " switch system grep cmd to ag
   set grepprg=ag\ --nogroup\ --nocolor\ --column
 
   " use ag in ctrlp: very fast, respects .gitignore and doesn't need cache
