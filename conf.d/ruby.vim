@@ -2,8 +2,6 @@
 "
 
 Plugin 'vim-ruby/vim-ruby'
-  " ruby completion
-  autocmd FileType ruby set omnifunc=rubycomplete#Complete
   let g:rubycomplete_rails=1
   let g:rubycomplete_classes_in_global=1
   let g:rubycomplete_buffer_loading=1
@@ -31,6 +29,9 @@ if executable('rubocop')
   let g:vimrubocop_keymap=0
   " nmap <Leader>r :RuboCop<CR>
 endif
+
+" ruby completion
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
 
 " vim: set ft=vim:
 

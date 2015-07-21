@@ -101,10 +101,6 @@ nmap <leader>x :close<cr>
 " clear search highlights
 nmap <silent>,/ :nohls<cr>
 
-" python/ruby run current buffer code
-map <leader>r :!ruby %<cr>
-map <leader>p :!python %<cr>
-
 " make the arrow keys switch between splits
 map <up>    <C-w>k
 map <down>  <C-w>j
