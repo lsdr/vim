@@ -20,3 +20,5 @@ bundle/*
 backup/*
 doc/tags-ja
 
+.netrwhist
+github-token
