@@ -9,7 +9,7 @@ Plugin 'vim-ruby/vim-ruby'
   let g:rubycomplete_include_objectspace=1
 
 Plugin 'tpope/vim-rails'
-  autocmd User Rails if &filetype != 'ruby' | setlocal sw=2 sts=2 noexpandtab | endif
+  autocmd User Rails if &filetype != 'ruby' | setlocal sw=2 sts=2 expandtab | endif
   autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
 
 " Plugin 'tpope/vim-bundler'
