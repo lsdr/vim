@@ -20,14 +20,20 @@ Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-endwise'
 Plugin 'sunaku/vim-ruby-minitest'
+
 Plugin 'thoughtbot/vim-rspec'
+  let g:rspec_runner='os_x_iterm'
+  " todo: rspec.vim mappings - move to ide.vim
+  autocmd FileType ruby nmap <Leader>rt :call RunCurrentSpecFile()<CR>
+  autocmd FileType ruby nmap <Leader>rta :call RunAllSpecs()<CR>
 
 if executable('rubocop')
   Plugin 'ngmy/vim-rubocop'
 
   " maps rubocop to <Leader>ru (default)
-  let g:vimrubocop_keymap=0
-  " nmap <Leader>r :RuboCop<CR>
+  let g:vimrubocop_keymap=1
+  " use global .rubocop.yml for now (trying and find project root config later)
+  let g:vimrubocop_config='.rubocop.yml'
 endif
 
 " ruby completion
