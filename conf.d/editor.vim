@@ -43,5 +43,7 @@ Plugin 'terryma/vim-multiple-cursors'
   " let g:multi_cursor_skip_key='<C-x>'
   " let g:multi_cursor_quit_key='<Esc>'
 
+Plugin 'editorconfig/editorconfig-vim'
+
 " vim: set ft=vim:
 
