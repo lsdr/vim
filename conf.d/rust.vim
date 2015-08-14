@@ -2,6 +2,7 @@
 "
 
 Plugin 'rust-lang/rust.vim'
+  let g:rust_recommended_style=1
 
 " rust mappings
 autocmd FileType rust nmap <leader>r :RustRun<cr>
