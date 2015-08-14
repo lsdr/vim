@@ -3,3 +3,8 @@
 
 Plugin 'rust-lang/rust.vim'
 
+" rust mappings
+autocmd FileType rust nmap <leader>r :RustRun<cr>
+
+" vim: set ft=vim:
+

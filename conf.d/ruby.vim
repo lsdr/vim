@@ -9,8 +9,6 @@ Plugin 'vim-ruby/vim-ruby'
   let g:rubycomplete_include_objectspace=1
 
 Plugin 'tpope/vim-rails'
-  autocmd User Rails if &filetype != 'ruby' | setlocal sw=2 sts=2 expandtab | endif
-  autocmd User Rails if &filetype == 'yaml' | setlocal sw=2 sts=2 expandtab | endif
 
 " Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-haml'
@@ -24,8 +22,6 @@ Plugin 'sunaku/vim-ruby-minitest'
 Plugin 'thoughtbot/vim-rspec'
   let g:rspec_runner='os_x_iterm'
   " todo: rspec.vim mappings - move to ide.vim
-  autocmd FileType ruby nmap <Leader>rt :call RunCurrentSpecFile()<CR>
-  autocmd FileType ruby nmap <Leader>rta :call RunAllSpecs()<CR>
 
 if executable('rubocop')
   Plugin 'ngmy/vim-rubocop'
@@ -38,6 +34,11 @@ endif
 
 " ruby completion
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
+
+" ruby mappings
+autocmd FileType ruby nmap <leader>r :!ruby %<cr>
+autocmd FileType ruby nmap <Leader>rt :call RunCurrentSpecFile()<CR>
+autocmd FileType ruby nmap <Leader>rta :call RunAllSpecs()<CR>
 
 " vim: set ft=vim:
 
