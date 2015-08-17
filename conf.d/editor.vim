@@ -15,12 +15,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
     let g:ctrlp_use_caching=0
   endif
 
-" Plugin 'dkprice/vim-easygrep'
-"   " use system grep instead of vimgrep
-"   let g:EasyGrepCommand=1
-"   let g:EasyGrepFilesToExclude='.svn,.git,.hg,.azk'
-"
-" trying out wincent/ferret
+Plugin 'tpope/vim-dispatch'
+
 Plugin 'wincent/ferret'
   let g:FerretHlsearch=1
 

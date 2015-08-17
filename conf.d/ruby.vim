@@ -21,7 +21,7 @@ Plugin 'sunaku/vim-ruby-minitest'
 
 Plugin 'thoughtbot/vim-rspec'
   let g:rspec_runner='os_x_iterm'
-  " todo: rspec.vim mappings - move to ide.vim
+  let g:rspec_command = 'Dispatch rspec {spec}'
 
 if executable('rubocop')
   Plugin 'ngmy/vim-rubocop'
