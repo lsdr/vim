@@ -10,7 +10,7 @@ On file list:
 `<c-v>`: split vertical and open  
 `<c-x>`: split horizontal and open
 
-### vim-rspec
+### vim-rspec (ruby specific)
 
-`<leader>rt`: RunCurrentSpecFile()  
-`<leader>rta`: RunAllSpecs()
+`<leader>rt`: run current spec file  
+`<leader>rta`: run all specs
