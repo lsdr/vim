@@ -9,7 +9,7 @@ vimrc gvimrc:
 relink: vimrc gvimrc
 	@printf "Configuration files relinked!\n"
 
-tmpdir bundledir:
+tmpdir bundledir docdir:
 	mkdir -p $(DIST)/$(patsubst %dir,%,$@)
 
 init_bundle:
