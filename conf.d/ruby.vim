@@ -1,7 +1,7 @@
 " ruby.vim - ruby (and rails) setting and plugins
 "
 " syntastic checker for ruby
-let g:syntastic_ruby_checkers = ['rubocop', 'mri', 'rubylint']
+let g:syntastic_ruby_checkers = ['rubocop']
 
 Plugin 'vim-ruby/vim-ruby'
   let g:rubycomplete_rails=1
@@ -12,7 +12,6 @@ Plugin 'vim-ruby/vim-ruby'
 
 Plugin 'tpope/vim-rails'
 
-" Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-haml'
   autocmd BufNewFile,BufRead *.haml set ft=haml
 
