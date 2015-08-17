@@ -12,5 +12,5 @@ On file list:
 
 ### vim-rspec
 
-`<leader>s`: RunCurrentSpecFile()  
-`<leader>a`: RunAllSpecs()
+`<leader>rt`: RunCurrentSpecFile()  
+`<leader>rta`: RunAllSpecs()
