@@ -48,10 +48,12 @@ Plugin 'scrooloose/syntastic'
   set statusline+=%{SyntasticStatuslineFlag()}
   set statusline+=%*
 
-  let g:syntastic_always_populate_loc_list=1
+  " only runs if :SyntasticCheck is called
+  let g:syntastic_mode='passive'
+  " jumps automagically to the first issue, only if it is an error
+  let g:syntastic_auto_jump=2
+  let g:syntastic_always_populate_loc_list=0
   let g:syntastic_auto_loc_list=1
-  let g:syntastic_check_on_open=0
-  let g:syntastic_check_on_wq=1
 
 
 " vim: set ft=vim:
