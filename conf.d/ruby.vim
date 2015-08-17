@@ -1,5 +1,7 @@
 " ruby.vim - ruby (and rails) setting and plugins
 "
+" syntastic checker for ruby
+let g:syntastic_ruby_checkers = ['rubocop', 'mri', 'rubylint']
 
 Plugin 'vim-ruby/vim-ruby'
   let g:rubycomplete_rails=1
