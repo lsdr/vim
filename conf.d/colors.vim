@@ -1,11 +1,9 @@
 " colorschemes.vim - all avaliable external colorschemes
 "
 Plugin 'lsdr/monokai'
-Plugin 'DAddYE/soda.vim'
 Plugin 'romainl/Apprentice'
 Plugin 'noahfrederick/vim-hemisu'
 Plugin 'lsdr/vim-hemisu-airline'
-Plugin 'chriskempson/base16-vim'
 
 if has('gui_running')
   set background=light
