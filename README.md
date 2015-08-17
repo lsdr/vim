@@ -14,7 +14,7 @@ To update:
 
 ## Getting vim
 
-I build MacVim from source using a forked Homebrew formula. I [set up a tap](https://github.com/lsdr/homebrew-stan) to help version this fork separately, instead of screwing with Homebrew locally in my systems.
+I build MacVim from source using a [fork of the Homebrew formula](https://github.com/lsdr/homebrew-stan). I gave it a different name just to avoid collisions.
 
 Just `brew tap lsdr/stan` and then `brew install lsdr/stan/melee-vim`.
 
@@ -22,5 +22,4 @@ You can also install via URL:
 ```
 brew install https://raw.github.com/lsdr/homebrew-stan/master/melee-vim.rb
 ```
-
 
