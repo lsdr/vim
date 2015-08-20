@@ -4,16 +4,16 @@ Plugin 'lsdr/monokai'
 Plugin 'romainl/Apprentice'
 Plugin 'noahfrederick/vim-hemisu'
 Plugin 'lsdr/vim-hemisu-airline'
+Plugin 'altercation/vim-colors-solarized'
 
 if has('gui_running')
   set background=light
   colorscheme hemisu
-  " colorscheme monokai
 else
   "enable 256 colors on terminal"
   set t_Co=256
   set background=dark
-  colorscheme apprentice
+  colorscheme solarized
 endif
 
 " vim: set ft=vim:
