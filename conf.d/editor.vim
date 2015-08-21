@@ -19,7 +19,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
     let g:ctrlp_use_caching=0
   endif
 
-Plugin 'tpope/vim-dispatch'
+" Plugin 'tpope/vim-dispatch'
 
 Plugin 'wincent/ferret'
   let g:FerretHlsearch=1
