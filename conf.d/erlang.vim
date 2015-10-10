@@ -6,3 +6,5 @@ let g:syntastic_erlc_include_path = 'ebin'
 
 Plugin 'jimenezrick/vimerl'
 
+" references: http://aerosol.github.io/anxibits/vim-as-your-erlang-ide/
+"

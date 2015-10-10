@@ -54,6 +54,7 @@ Plugin 'scrooloose/syntastic'
     \ 'active_filetypes': [],
     \ 'passive_filetypes': []
     \ }
+
   " jumps automagically to the first issue, only if it is an error
   let g:syntastic_auto_jump=2
   let g:syntastic_always_populate_loc_list=0
