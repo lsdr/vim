@@ -7,12 +7,14 @@ if has("gui_macvim")
   nmap <silent> <leader>nfu :set nofu<cr>
 end
 
-" if on mac, use Droid; on Linux, Inconsolata
+" font configuration
+" based on platform, screen size, etc
 if has("gui_macvim")
-  :set guifont=Inconsolata-dz\ for\ Powerline:h14
-  " :set guifont=Droid\ Sans\ Mono:h14
+  set guifont=Inconsolata-dz\ for\ Powerline:h14
+  " set guifont=Droid\ Sans\ Mono:h14
+  set linespace=2
 else
-  :set guifont=Inconsolata\ 12
+  set guifont=Inconsolata\ 12
 end
 set antialias
 
