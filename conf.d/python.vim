@@ -1,4 +1,4 @@
-" python.vim - python programming tools, libs and such 
+" python.vim - python programming tools, libs and such
 "
 " python pep8 formatting specifics
 autocmd FileType python set softtabstop=4

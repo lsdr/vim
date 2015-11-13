@@ -42,23 +42,5 @@ Plugin 'terryma/vim-multiple-cursors'
 
 Plugin 'editorconfig/editorconfig-vim'
 
-Plugin 'scrooloose/syntastic'
-  " checkers for specific langs are defined in their own conf.d files
-  set statusline+=%#warningmsg#
-  set statusline+=%{SyntasticStatuslineFlag()}
-  set statusline+=%*
-
-  " only runs if :SyntasticCheck is called
-  let g:syntastic_mode_map = {
-    \ 'mode': 'passive',
-    \ 'active_filetypes': [],
-    \ 'passive_filetypes': []
-    \ }
-
-  " jumps automagically to the first issue, only if it is an error
-  let g:syntastic_auto_jump=2
-  let g:syntastic_always_populate_loc_list=0
-  let g:syntastic_auto_loc_list=0
-
 " vim: set ft=vim:
 
