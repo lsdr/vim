@@ -7,7 +7,7 @@ Plugin 'altercation/vim-colors-solarized'
 
 if has('gui_running')
   set background=light
-  colorscheme solarized
+  colorscheme hemisu
 else
   "enable 256 colors on terminal"
   set t_Co=256
