@@ -36,3 +36,6 @@ let g:syntastic_elixir_checkers = ['elixir']
 " do not allow it to run automatically
 let g:syntastic_enable_elixir_checker = 0
 
+"" javascript
+let g:syntastic_javascript_checkers = ['eslint']
+

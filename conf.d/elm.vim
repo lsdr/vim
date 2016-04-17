@@ -1,6 +1,6 @@
 " elm.vim - elm (elm-lang.org) extensions and stuffs
 "
-Plugin 'ajhager/elm-vim'
+" Plugin 'ajhager/elm-vim'
 
 " au FileType elm nmap <leader>b <Plug>(elm-make)
 " au FileType elm nmap <leader>m <Plug>(elm-make-main)
