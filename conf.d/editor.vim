@@ -11,6 +11,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
   let g:ctrlp_map='<leader>t'
   nnoremap <leader>b :CtrlPBuffer<cr>
+  nnoremap <leader>m :CtrlPMRU<cr>
   nnoremap <leader>. :CtrlPTag<cr>
 
   " use ag in ctrlp: very fast, respects .gitignore and doesn't need cache
