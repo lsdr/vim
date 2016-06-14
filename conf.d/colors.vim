@@ -4,6 +4,7 @@ Plugin 'lsdr/monokai'
 Plugin 'noahfrederick/vim-hemisu'
 Plugin 'lsdr/vim-hemisu-airline'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline-themes'
 
 if has('gui_running')
   set background=light
