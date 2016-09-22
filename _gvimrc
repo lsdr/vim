@@ -10,7 +10,8 @@ end
 " font configuration
 " based on platform, screen size, etc
 if has("gui_macvim")
-  set guifont=Inconsolata-dz\ for\ Powerline:h14
+  set guifont=Roboto\ Mono:h14
+  " set guifont=Inconsolata-dz\ for\ Powerline:h14
   " set guifont=Droid\ Sans\ Mono:h14
   set linespace=2
 else
