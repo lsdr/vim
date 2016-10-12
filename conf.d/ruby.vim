@@ -17,8 +17,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-endwise'
 Plugin 'sunaku/vim-ruby-minitest'
 
-Plugin 'thoughtbot/vim-rspec'
-  let g:rspec_runner='os_x_iterm'
+" Plugin 'thoughtbot/vim-rspec'
+"   let g:rspec_runner='os_x_iterm2'
 
 if executable('rubocop')
   Plugin 'ngmy/vim-rubocop'
@@ -28,6 +28,11 @@ if executable('rubocop')
   " use global .rubocop.yml for now (trying and find project root config later)
   let g:vimrubocop_config='.rubocop.yml'
 endif
+
+" Plugin 'skalnik/vim-vroom'
+"   " vroom maps to <Leader>r, disabling default mapping
+"   let g:vroom_map_keys=0
+"   let g:vroom_use_dispatch=1
 
 " ruby completion
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
