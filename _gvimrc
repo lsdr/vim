@@ -7,8 +7,7 @@ if has("gui_macvim")
   nmap <silent> <leader>nfu :set nofu<cr>
 end
 
-" font configuration
-" based on platform, screen size, etc
+" platform-dependent font setup
 if has("gui_macvim")
   set guifont=Roboto\ Mono:h14
   " set guifont=Inconsolata-dz\ for\ Powerline:h14
