@@ -12,3 +12,10 @@
 `<leader>rt`: run current spec file
 `<leader>rta`: run all specs
 
+## vim-ruby
+
+`]m`: To edit start of next method definition
+`]M`: To go to end of next method definition
+`[m`: To start of previous method definition
+`[M`: To end of previous method definition
+
