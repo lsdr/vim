@@ -18,8 +18,9 @@ else
 end
 set antialias
 
-" we don't need no stinkin' toolbar/right scroller!
+" we don't need no stinkin' toolbar/scrollbars!
 set guioptions-=T
+set guioptions-=L
 set guioptions-=r
 
 " make window as big as possible
