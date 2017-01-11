@@ -71,7 +71,7 @@ set autoindent
 set smartindent
 
 " tab completion
-set wildmode=list:longest,full
+set wildmode=longest:full,full
 set wildmenu
 set wildignore+=*.o,*~,.lo,*.swp,*.pyc,.git,*.log,*.zip,*.so,*/tmp/*
 set wildignore+=log/**,tmp/**,*DS_Store*,.hg
